@@ -7,55 +7,82 @@
   <!-- overall body -->
   <body>
     <!-- overall navigation -->
-    <div class="nav">
-      <!-- logo container -->
-      <div class="logo">
-        <!-- logo image -->
-        <img class="" src="" alt="" />
-      </div>
+    <div class="nav d-flex flex-row justify-content-betweens">
+      <!-- logo image -->
+      <img
+        class="logo w-30 h-auto"
+        src="./media/craft cottage block logo.JPG"
+        alt="Sunflower with Momma's Craft Cottage"
+      />
+
       <!-- navigation links -->
-      <nav>
+      <nav class="d-flex flex-row justify-content-between h-48px ml-auto">
         <!-- home link -->
-        <button class="home-link" href="#">Home</button>
+        <button class="home-link font-size-20px margin-x-16px" id="homeLink">
+          Home
+        </button>
 
         <!-- about link -->
-        <button class="about-link" href="#">About</button>
+        <button class="about-link font-size-20px margin-x-16px" id="aboutLink">
+          > About
+        </button>
         <!-- gallery link -->
-        <button class="gallery-link" href="#">Gallery</button>
+        <button
+          class="gallery-link font-size-20px margin-x-16px"
+          id="galleryLink"
+        >
+          > Gallery
+        </button>
         <!-- contact link -->
-        <button class="contact-link" href="#">Contact</button>
+        <button
+          class="contact-link font-size-20px margin-x-16px"
+          id="contactLink"
+        >
+          > Contact
+        </button>
       </nav>
     </div>
     <!-- home page -->
-    <h1>Momma's Craft Cottage</h1>
-    <div class="home">
+
+    <div class="home" id="homeContent">
+      <h1>Momma's Craft Cottage</h1>
       <div class="pic-of-property">
         <div class="pic-wrapper">
-          <img class="House" src="./media/IMG_Front.jpg" width="900" alt="Front of House" />
-          <figcaption>Crafting Cottage-front of retreat</figcaption>
+          <img
+            class="House"
+            src="./media/IMG_Front.jpg"
+            width="900"
+            alt="Front of House"
+          />
+          <figcaption>Crafting Cottage-front of Retreat</figcaption>
         </div>
       </div>
-      <h2>Retreat to Crafting Cottage</h2>
+      <h2>Retreat to Momma's Crafting Cottage</h2>
       <div class="retreat-create">
         <p>
-          Retreat to Momma's Craft Cottage with 9 of your friends to be in Scrapbook
-          heaven. The cottage features a cozy 3 bedroom that will sleep 9 and includes 2 baths, on a scenic country road in legendary Brown County, IN.  We offer private retreat rentals for groups of 6-9 guest but may be able to acommodate groups as few as 4 upon request.  View Calendar and Make a Reservation!
+          Retreat to Momma's Craft Cottage with 9 of your friends to be in
+          Scrapbook heaven. The cottage features a cozy 3 bedroom that will
+          sleep 9 and includes 2 baths, on a scenic country road in legendary
+          Brown County, IN. We offer private retreat rentals for groups of 6-9
+          guest but may be able to acommodate groups as few as 4 upon request.
+          View Calendar and Make a Reservation!
         </p>
       </div>
       <h2>Retreat. Create.</h2>
       <div class="retreat-to-create">
-        <p>
-          The Crafting Cottage features:
-
-          </ol>
+        <p>Momma's Crafting Cottage features:</p>
+        <ol>
           <li>1 spacious workrom on main level</li>
           <li>Easy access to unload supplies - no stairs</li>
           <li>6 individual tables with side tables</li>
-          <li>Great overhead lighting, 6 individual table lights, and lots of natural lighting</li>
+          <li>
+            Great overhead lighting, 6 individual table lights, and lots of
+            natural lighting
+          </li>
           <li>Individual power strips with USB and USB-C outlets</li>
-          </ol>
-        </p>
+        </ol>
       </div>
+      <!-- Embed Google Map feature -->
       <div class="location-map">
         <div
           style="
@@ -79,14 +106,12 @@
         </div>
       </div>
     </div>
-    <h2>About</h2>
-    <!-- about page -->
-    <div class="about">
-      <div class="about-description">
-        <p>
-          Preserving memories which are timeless treasures of the heart.
 
-        </p>
+    <!-- about page -->
+    <div class="about" id="aboutContent">
+      <h2>About</h2>
+      <div class="about-description">
+        <p>Preserving memories which are timeless treasures of the heart.</p>
       </div>
       <div class="about-host"></div>
       <div class="about-pic">
@@ -94,19 +119,19 @@
       </div>
     </div>
     <!-- gallery page -->
-    <div class="gallery d-none">
+    <div class="gallery d-none" id="galleryContent">
       <div class="pics-wrapper"></div>
     </div>
     <!-- contact page -->
-    <div class="contact">
+    <div class="contact" id="contactContent">
       <div>
         <div class="contact-header">
-            <h2>Contact Us</h2>
-            <ul>
-                <li>Phone: 502-807-1370</li>
-                <li>Email: mommascraftcottage @gmail.com</li>
-                <li>Address: 912 Jackson Branch Road, Nashville, Indiana 47448</li>
-            </ul>
+          <h2>Contact Us</h2>
+          <ul>
+            <li>Phone: 502-807-1370</li>
+            <li>Email: mommascraftcottage @gmail.com</li>
+            <li>Address: 912 Jackson Branch Road, Nashville, Indiana 47448</li>
+          </ul>
         </div>
         <div class="contact-form"></div>
       </div>
