@@ -43,3 +43,31 @@ body {
     margin-left: 16px;
     margin-right: 16px;
 }
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.min-height-100vh {
+    height: 100vh;
+}
+
+.w-100 {
+    width: 100%;
+}

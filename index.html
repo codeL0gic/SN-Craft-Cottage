@@ -5,150 +5,157 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <!-- overall body -->
-  <body>
-    <!-- overall navigation -->
-    <div class="nav d-flex flex-row justify-content-betweens">
-      <!-- logo image -->
-      <img
-        class="logo w-30 h-auto"
-        src="./media/craft cottage block logo.JPG"
-        alt="Sunflower with Momma's Craft Cottage"
-      />
+  <body class="d-flex flex-column">
+    <div class="main-content w-100 min-height-100vh">
+      <!-- overall navigation -->
+      <div class="nav d-flex flex-row justify-content-betweens">
+        <!-- logo image -->
+        <img
+          class="logo w-30 h-auto"
+          src="./media/craft cottage block logo.JPG"
+          alt="Sunflower with Momma's Craft Cottage"
+        />
 
-      <!-- navigation links -->
-      <nav class="d-flex flex-row justify-content-between h-48px ml-auto">
-        <!-- home link -->
-        <button class="home-link font-size-20px margin-x-16px" id="homeLink">
-          Home
-        </button>
+        <!-- navigation links -->
+        <nav class="d-flex flex-row justify-content-between h-48px ml-auto">
+          <!-- home link -->
+          <button class="home-link font-size-20px margin-x-16px" id="homeLink">
+            Home
+          </button>
 
-        <!-- about link -->
-        <button class="about-link font-size-20px margin-x-16px" id="aboutLink">
-          > About
-        </button>
-        <!-- gallery link -->
-        <button
-          class="gallery-link font-size-20px margin-x-16px"
-          id="galleryLink"
-        >
-          > Gallery
-        </button>
-        <!-- contact link -->
-        <button
-          class="contact-link font-size-20px margin-x-16px"
-          id="contactLink"
-        >
-          > Contact
-        </button>
-      </nav>
-    </div>
-    <!-- home page -->
-
-    <div class="home" id="homeContent">
-      <h1>Momma's Craft Cottage</h1>
-      <div class="pic-of-property">
-        <div class="pic-wrapper">
-          <img
-            class="House"
-            src="./media/IMG_Front.jpg"
-            width="900"
-            alt="Front of House"
-          />
-          <figcaption>Crafting Cottage-front of Retreat</figcaption>
-        </div>
-      </div>
-      <h2>Retreat to Momma's Crafting Cottage</h2>
-      <div class="retreat-create">
-        <p>
-          Retreat to Momma's Craft Cottage with 9 of your friends to be in
-          Scrapbook heaven. The cottage features a cozy 3 bedroom that will
-          sleep 9 and includes 2 baths, on a scenic country road in legendary
-          Brown County, IN. We offer private retreat rentals for groups of 6-9
-          guest but may be able to acommodate groups as few as 4 upon request.
-          View Calendar and Make a Reservation!
-        </p>
-      </div>
-      <h2>Retreat. Create.</h2>
-      <div class="retreat-to-create">
-        <p>Momma's Crafting Cottage features:</p>
-        <ol>
-          <li>1 spacious workrom on main level</li>
-          <li>Easy access to unload supplies - no stairs</li>
-          <li>6 individual tables with side tables</li>
-          <li>
-            Great overhead lighting, 6 individual table lights, and lots of
-            natural lighting
-          </li>
-          <li>Individual power strips with USB and USB-C outlets</li>
-        </ol>
-      </div>
-      <!-- Embed Google Map feature -->
-      <div class="location-map">
-        <div
-          style="
-            text-decoration: none;
-            overflow: hidden;
-            max-width: 100%;
-            width: 500px;
-            height: 500px;
-          "
-        >
-          <div
-            id="google-maps-canvas"
-            style="height: 100%; width: 100%; max-width: 100%"
+          <!-- about link -->
+          <button
+            class="about-link font-size-20px margin-x-16px"
+            id="aboutLink"
           >
-            <iframe
-              style="height: 100%; width: 100%; border: 0"
-              frameborder="0"
-              src="https://www.google.com/maps/embed/v1/place?q=912+Jackson+Branch+Road,+Nashville,+Indiana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-            ></iframe>
+            > About
+          </button>
+          <!-- gallery link -->
+          <button
+            class="gallery-link font-size-20px margin-x-16px"
+            id="galleryLink"
+          >
+            > Gallery
+          </button>
+          <!-- contact link -->
+          <button
+            class="contact-link font-size-20px margin-x-16px"
+            id="contactLink"
+          >
+            > Contact
+          </button>
+        </nav>
+      </div>
+
+      <!-- home page -->
+      <div class="home w-100" id="homeContent">
+        <h1>Momma's Craft Cottage</h1>
+        <div class="pic-of-property">
+          <div class="pic-wrapper">
+            <img
+              class="House"
+              src="./media/IMG_Front.jpg"
+              width="900"
+              alt="Front of House"
+            />
+            <figcaption>Crafting Cottage-front of Retreat</figcaption>
+          </div>
+        </div>
+        <h2>Retreat to Momma's Crafting Cottage</h2>
+        <div class="retreat-create">
+          <p>
+            Retreat to Momma's Craft Cottage with 9 of your friends to be in
+            Scrapbook heaven. The cottage features a cozy 3 bedroom that will
+            sleep 9 and includes 2 baths, on a scenic country road in legendary
+            Brown County, IN. We offer private retreat rentals for groups of 6-9
+            guest but may be able to acommodate groups as few as 4 upon request.
+            View Calendar and Make a Reservation!
+          </p>
+        </div>
+        <h2>Retreat. Create.</h2>
+        <div class="retreat-to-create">
+          <p>Momma's Crafting Cottage features:</p>
+          <ol>
+            <li>1 spacious workrom on main level</li>
+            <li>Easy access to unload supplies - no stairs</li>
+            <li>6 individual tables with side tables</li>
+            <li>
+              Great overhead lighting, 6 individual table lights, and lots of
+              natural lighting
+            </li>
+            <li>Individual power strips with USB and USB-C outlets</li>
+          </ol>
+        </div>
+        <!-- Embed Google Map feature -->
+        <div class="location-map">
+          <div
+            style="
+              text-decoration: none;
+              overflow: hidden;
+              max-width: 100%;
+              width: 500px;
+              height: 500px;
+            "
+          >
+            <div
+              id="google-maps-canvas"
+              style="height: 100%; width: 100%; max-width: 100%"
+            >
+              <iframe
+                style="height: 100%; width: 100%; border: 0"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=912+Jackson+Branch+Road,+Nashville,+Indiana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- about page -->
-    <div class="about" id="aboutContent">
-      <h2>About</h2>
-      <div class="about-description">
-        <p>Preserving memories which are timeless treasures of the heart.</p>
-      </div>
-      <div class="about-host"></div>
-      <div class="about-pic">
-        <img class="" src="" alt="" />
-      </div>
-    </div>
-    <!-- gallery page -->
-    <div class="gallery d-none" id="galleryContent">
-      <div class="pics-wrapper"></div>
-    </div>
-    <!-- contact page -->
-    <div class="contact" id="contactContent">
-      <div>
-        <div class="contact-header">
-          <h2>Contact Us</h2>
-          <ul>
-            <li>Phone: 502-807-1370</li>
-            <li>Email: mommascraftcottage @gmail.com</li>
-            <li>Address: 912 Jackson Branch Road, Nashville, Indiana 47448</li>
-          </ul>
+      <!-- about page -->
+      <div class="about d-none w-100" id="aboutContent">
+        <h2>About</h2>
+        <div class="about-description">
+          <p>Preserving memories which are timeless treasures of the heart.</p>
         </div>
-        <div class="contact-form"></div>
+        <div class="about-host"></div>
+        <div class="about-pic">
+          <img class="" src="" alt="" />
+        </div>
+      </div>
+      <!-- gallery page -->
+      <div class="gallery d-none w-100" id="galleryContent">
+        <div class="pics-wrapper"></div>
+      </div>
+      <!-- contact page -->
+      <div class="contact d-none w-100" id="contactContent">
+        <div>
+          <div class="contact-header">
+            <h2>Contact Us</h2>
+            <ul>
+              <li>Phone: 502-807-1370</li>
+              <li>Email: mommascraftcottage @gmail.com</li>
+              <li>
+                Address: 912 Jackson Branch Road, Nashville, Indiana 47448
+              </li>
+            </ul>
+          </div>
+          <div class="contact-form"></div>
+        </div>
       </div>
     </div>
     <!-- footer -->
-    <footer>
-      <div class="socials-wrapper">
-        <div class="fb-wrapper">
-          <a href="">
-            <img src="" alt="facebook" />
-          </a>
-        </div>
-        <div class="ig-wrapper">
-          <a href="">
-            <img src="" alt="instagram" />
-          </a>
-        </div>
+    <footer
+      class="d-flex flex-row justify-content-center align-items-center w-100 mt-auto"
+    >
+      <div class="fb-wrapper margin-x-16px">
+        <a href="">
+          <img src="" alt="facebook" />
+        </a>
+      </div>
+      <div class="ig-wrapper margin-x-16px">
+        <a href="">
+          <img src="" alt="instagram" />
+        </a>
       </div>
     </footer>
   </body>
