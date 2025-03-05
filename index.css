@@ -9,12 +9,20 @@
     flex-direction: row;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .justify-content-between {
     justify-content: space-between;
 }
 
 .w-30 {
     width: 30%;
+}
+
+.w-45 {
+    width: 45%;
 }
 
 .h-auto {
@@ -70,4 +78,8 @@ body {
 
 .w-100 {
     width: 100%;
+}
+
+.p-16px {
+    padding: 16px;
 }

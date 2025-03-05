@@ -114,30 +114,66 @@
       <!-- about page -->
       <div class="about d-none w-100" id="aboutContent">
         <h1>About Momma's Craft Cottage</h1>
-
-        <h2>About</h2>
         <div class="about-description">
-          <p>Momma's Crafting Cottage's mission is to provide a cozy, creative space where you and your friends can gather to craft and preserve memories which are timeless treasures of the heart.   We aim to inpsire heartfel storytelling through your personalized scrapbooks.  Your retreat will help you capture and celebrate lifes special moments, creating lasting keepsakes that can be treasured for generations.</p>
+          <p>
+            Momma's Crafting Cottage mission is to provide a cozy, creative
+            space where you and your friends can gather to craft and preserve
+            memories which are timeless treasures of the heart. We aim to
+            inpsire heartfel storytelling through your personalized scrapbooks.
+            Your retreat will help you capture and celebrate lifes special
+            moments, creating lasting keepsakes that can be treasured for
+            generations.
+          </p>
           <!--<div class="pic-of-host">-->
-          
+        </div>
+
+        <div class="about-host">
+          <h2>About the host</h2>
+          <div class="about host description"></div>
+          <div class="about-pic">
+            <img
+              class="host"
+              src="./media/host-Image.JPEG"
+              width="400"
+              alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
+            />
           </div>
-        </div>
-        <div class="about-host">        
-                
-        </div>
-        <div class="about-pic">
-          <img class="host" src="./media/host-Image.JPEG" width="400" alt="Picture of host with grandchildren and dog on their knee in a grassy yard" />
         </div>
       </div>
       <!-- gallery page -->
       <div class="gallery d-none w-100" id="galleryContent">
-        <div class="fit-picture"></div>
-        <img
-              class="frontHouse"
-              src="./media/cottageFrontSnow.jpg"
-              width="200"
-              alt="Front of House with snow"/>  
-        
+        <div class="fit-picture d-flex flex-row flex-wrap">
+          <img
+            class="frontHouse w-45 h-auto p-16px"
+            src="./media/cottageFrontSnow.jpg"
+            alt="Front of House with snow"
+          />
+          <img
+            class="w-45 h-auto p-16px"
+            src="./media/insideTableView.JPG"
+            alt="inside view of table and kitchen area"
+          />
+          <img
+            class="w-45 h-auto p-16px"
+            src="./media/cottageKitchen.JPG"
+            alt="kitchen area at sink"
+          />
+          <img
+            class="w-45 h-auto p-16px"
+            src="./media/bedroomTwoBunks.JPG"
+            alt="bedroom with two bunkbeds"
+          />
+          <img
+            class="w-45 h-auto p-16px"
+            src="./media/insideTableView.JPG"
+            alt="dining table in kitchen"
+          />
+          <img
+            class="w-45 h-auto p-16px"
+            src="./media/bedroomOne.JPG"
+            alt="bdroom 1 with bed"
+          />
+        </div>
       </div>
       <!-- contact page -->
       <div class="contact d-none w-100" id="contactContent">
@@ -151,14 +187,14 @@
               <li>Nashville, Indiana 47448</li>
             </ul>
           </div>
-          <div class="contact-form">
+          <form class="contact-form">
             <h2>Booking Inquiry</h2>
-            <input id="firstName" type="text" placeholder="First Name"/>
-            <input id="LastName" type="text" placeholder="Last Name"/>
+            <input id="firstName" type="text" placeholder="First Name" />
+            <input id="lastName" type="text" placeholder="Last Name" />
             <input id="emailAddress" type="email" placeholder="Email Address" />
-            <input id="message" type="text" placeholder="Message"/>
+            <input id="message" type="text" placeholder="Message" />
             <button id="submit">submit</button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
