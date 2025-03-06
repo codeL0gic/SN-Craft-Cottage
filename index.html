@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <!-- overall body -->
-  <body class="d-flex flex-column">
+  <body class="d-flex flex-column bg-sunflower-yellow">
     <div class="main-content w-100 min-height-100vh">
       <!-- overall navigation -->
-      <div class="nav d-flex flex-row justify-content-betweens">
+      <div class="nav d-flex flex-row justify-content-betweens bg-white">
         <!-- logo image -->
         <img
           class="logo w-30 h-auto"
@@ -130,14 +130,7 @@
         <div class="about-host">
           <h2>About the host</h2>
           <div class="about host description"></div>
-          <div class="about-pic">
-            <img
-              class="host"
-              src="./media/host-Image.JPEG"
-              width="400"
-              alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
-            />
-          </div>
+          <div class="about-pic"></div>
         </div>
       </div>
       <!-- gallery page -->
@@ -180,27 +173,56 @@
         <div>
           <div class="contact-header">
             <h2>Contact Us</h2>
+            <div
+              class="contact-pic w-100 d-flex flex-row justify-content-center align-items-center"
+            >
+              <img
+                class="host w-75"
+                src="./media/host-Image.JPEG"
+                alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
+              />
+            </div>
             <ul>
               <li>Phone: 502-807-1370</li>
               <li>Email: mommascraftcottage @gmail.com</li>
               <li>Address: 912 Jackson Branch Road</li>
               <li>Nashville, Indiana 47448</li>
             </ul>
-          </div>
-          <form class="contact-form">
             <h2>Booking Inquiry</h2>
-            <input id="firstName" type="text" placeholder="First Name" />
-            <input id="lastName" type="text" placeholder="Last Name" />
-            <input id="emailAddress" type="email" placeholder="Email Address" />
-            <input id="message" type="text" placeholder="Message" />
-            <button id="submit">submit</button>
-          </form>
+            <form action="contact.html method="POST" enctype="application/x-www-form-urlencoded"></form>
+            <p>
+                <label for="firstName">First Name:</label>
+                <input id="firstName" type="text" placeholder="First Name" required />
+            </p>
+            <p>
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" type="text" placeholder="Last Name" required/>
+                </p>
+            
+            <p>   
+                <label for="emailAddress">Email Address:</label> 
+                <input id="emailAddress" type="email" placeholder="Email Address" required/>
+            </p>
+            <p>
+                <label for="phoneNumber">Phone Number:</label>
+                <input id="phoneNumber" type="tel" placeholder="Phone Number" required/>
+            </p>
+            <p>
+                <label for="message">Message:</label>
+                <textarea id="message" type="text" name="user_Message" required></textarea>
+            </p> 
+            <p class=""button">
+                <button type="submit">Submit</button>
+            </p>
+              
+            </form>
+          </div>
         </div>
       </div>
     </div>
     <!-- footer -->
     <footer
-      class="d-flex flex-row justify-content-center align-items-center w-100 mt-auto"
+      class="d-flex flex-row justify-content-center align-items-center w-100 mt-auto bg-white"
     >
       <div class="fb-wrapper margin-x-16px">
         <a href="">

@@ -24,7 +24,9 @@
 .w-45 {
     width: 45%;
 }
-
+.w-75 {
+    width: 75%;
+}
 .h-auto {
     height: auto;
 }
@@ -82,4 +84,66 @@ body {
 
 .p-16px {
     padding: 16px;
+}
+
+.bg-sunflower-yellow {
+    background-color: #F7DFA1
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+form{
+     /* form outline */
+    display:  inline-block;
+    padding: 1 em;
+    border: 1px solid #ccc;
+    border-radius: 1 em;
+    box-shadow: 0 0 10 px #ccc;
+   
+}
+
+p + p {
+    margin-top: 1 em;
+}
+
+body {
+    /* Center the form on the page */
+    text-align: center;
+    display: flex;
+}
+label {
+    /* Size and alignment uniform */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+input, textarea {
+    /* make sure all text fields have the same font settings by default */
+    font: 1 em sands-serif;
+    width: 300 px;
+    box-sizing:  border-box;
+    border: 1 px solid #999;
+}
+input:focus, textara:focus {
+    /* set outline width and style */
+    outline-style: solid;
+    outline-color: #000;
+    /* gives highlight to active element */
+    outline-width: 2px;
+}
+
+textarea {
+    /* align text fields with labels */
+    vertical-align: top;
+    height: 5 em;
+}
+
+.button {
+    /* align buttons with the text fields */
+    padding-left: 90px;
+}
+button {
+    margin-left: 0.5em;;
 }
