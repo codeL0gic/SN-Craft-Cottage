@@ -39,3 +39,32 @@ homeLink.addEventListener("click", showHomeContent);
 aboutLink.addEventListener("click", showAboutContent);
 galleryLink.addEventListener("click", showGalleryContent);
 contactLink.addEventListener("click", showContactContent);
+
+/*Submit button validation*/
+const submitButton = document.getElementById("submitButton");
+const form = document.querySelector("form");
+const email = document.getElementById("email");
+const emailError = document.querySelector("#email + span.error");
+
+function submitButtonHandler(clickEvent) {
+  clickEvent.preventDefault();
+  if (!form.checkValidity()) {
+    emailError.textContent = email.validationMessage;
+    emailError.style.display = "block";
+  }
+}
+
+email.addEventListener("input", (_event) => {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail, darling!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+
+submitButton.addEventListener("click", (submitButton) => {
+  if (!form.checkValidity()) {
+    emailError.textContent = email.validationMessage;
+    emailError.style.display = "block";
+  }
+});

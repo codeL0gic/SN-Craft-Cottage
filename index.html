@@ -54,14 +54,14 @@
           <div class="pic-wrapper">
             <img
               class="House"
-              src="./media/IMG_Front.jpg"
+              src="./media/cottageFrontCloseupSnow.jpg"
               width="900"
               alt="Front of House"
             />
-            <figcaption>Crafting Cottage-front of Retreat</figcaption>
+            <figcaption>Momma's Craft Cottage</figcaption>
           </div>
         </div>
-        <h2>Retreat to Momma's Crafting Cottage</h2>
+        <h2>Retreat to Momma's Craft Cottage</h2>
         <div class="retreat-create">
           <p>
             Retreat to Momma's Craft Cottage with 9 of your friends to be in
@@ -74,17 +74,17 @@
         </div>
         <h2>Retreat. Create.</h2>
         <div class="retreat-to-create">
-          <p>Momma's Crafting Cottage features:</p>
-          <ol>
-            <li>1 spacious workrom on main level</li>
-            <li>Easy access to unload supplies - no stairs</li>
-            <li>6 individual tables with side tables</li>
-            <li>
+          <p>Momma's Craft Cottage features:</p>
+          <dl>
+            <dd>1 spacious workrom on main level</dd>
+            <dd>Easy access to unload supplies - no stairs</dd>
+            <dd>6 individual tables with side tables</dd>
+            <dd>
               Great overhead lighting, 6 individual table lights, and lots of
               natural lighting
-            </li>
-            <li>Individual power strips with USB and USB-C outlets</li>
-          </ol>
+            </dd>
+            <dd>Individual power strips with USB and USB-C outlets</dd>
+          </dl>
         </div>
         <!-- Embed Google Map feature -->
         <div class="location-map">
@@ -124,6 +124,11 @@
             moments, creating lasting keepsakes that can be treasured for
             generations.
           </p>
+          <img
+                class="host w-75"
+                src="./media/host-Image.JPEG"
+                alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
+              />
           <!--<div class="pic-of-host">-->
         </div>
 
@@ -176,27 +181,24 @@
             <div
               class="contact-pic w-100 d-flex flex-row justify-content-center align-items-center"
             >
-              <img
-                class="host w-75"
-                src="./media/host-Image.JPEG"
-                alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
-              />
+              
             </div>
+            <H2>Momma's Craft Cottage</H2>
             <ul>
               <li>Phone: 502-807-1370</li>
-              <li>Email: mommascraftcottage @gmail.com</li>
+              <li>Email: mommascraftcottage@gmail.com</li>
               <li>Address: 912 Jackson Branch Road</li>
               <li>Nashville, Indiana 47448</li>
             </ul>
             <h2>Booking Inquiry</h2>
-            <form action="contact.html method="POST" enctype="application/x-www-form-urlencoded"></form>
+            <form action="contact.html method= "POST"  enctype="application/x-www-form-urlencoded"></form>
             <p>
                 <label for="firstName">First Name:</label>
-                <input id="firstName" type="text" placeholder="First Name" required />
+                <input id="firstName" type="text" placeholder="First Name" required  />
             </p>
             <p>
                 <label for="lastName">Last Name:</label>
-                <input id="lastName" type="text" placeholder="Last Name" required/>
+                <input id="lastName" type="text" placeholder="Last Name" required />
                 </p>
             
             <p>   
@@ -209,13 +211,33 @@
             </p>
             <p>
                 <label for="message">Message:</label>
-                <textarea id="message" type="text" name="user_Message" required></textarea>
+                <textarea id="message" type="text" name="user_Message" required maxlength="140" rows="5"></textarea>
             </p> 
-            <p class=""button">
-                <button type="submit">Submit</button>
+            <p class="button">
+                <button type="submitButton">Submit</button>
             </p>
-              
             </form>
+            <!-- Embed Google Map feature -->
+        <div class="location-map">
+            <div
+              style="
+                text-decoration: none;
+                overflow: hidden;
+                max-width: 100%;
+                width: 500px;
+                height: 500px;
+              "
+            >
+              <div
+                id="google-maps-canvas"
+                style="height: 100%; width: 100%; max-width: 100%"
+              >
+                <iframe
+                  style="height: 100%; width: 100%; border: 0"
+                  frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?q=912+Jackson+Branch+Road,+Nashville,+Indiana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                ></iframe>
+              </div>
           </div>
         </div>
       </div>

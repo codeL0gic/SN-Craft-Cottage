@@ -94,7 +94,7 @@ body {
     background-color: #fff;
 }
 
-form{
+form {
      /* form outline */
     display:  inline-block;
     padding: 1 em;
@@ -146,4 +146,21 @@ textarea {
 }
 button {
     margin-left: 0.5em;;
+}
+input:invalid {
+    border: 2px dashed rgb(246, 246, 9);
+}
+
+input:valid {
+    border: 2 px solid black;
+}
+input:invalid:required {
+    background-image: linear-gradient(to right, rgb(236, 244, 236), rgb(207, 225, 118));
+}
+
+.contact-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
 }
