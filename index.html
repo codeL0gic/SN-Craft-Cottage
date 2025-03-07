@@ -29,21 +29,21 @@
             class="about-link font-size-20px margin-x-16px"
             id="aboutLink"
           >
-            > About
+            About
           </button>
           <!-- gallery link -->
           <button
             class="gallery-link font-size-20px margin-x-16px"
             id="galleryLink"
           >
-            > Gallery
+           Gallery
           </button>
           <!-- contact link -->
           <button
             class="contact-link font-size-20px margin-x-16px"
             id="contactLink"
           >
-            > Contact
+            Contact
           </button>
         </nav>
       </div>
@@ -139,7 +139,6 @@
         </div>
 
         <div class="about-host">
-          <h2>About the host</h2>
           <div class="about host description"></div>
           <div class="about-pic"></div>
         </div>
@@ -194,7 +193,8 @@
               <li>Nashville, Indiana 47448</li>
             </ul>
             <h2>Booking Inquiry</h2>
-            <form action="contact.html method= "POST"  enctype="application/x-www-form-urlencoded">
+            <!--method= "POST"  enctype="application/x-www-form-urlencoded">-->
+            <form id="Form" type="text" action="mailto:" method="POST" enctype="application/x-www-form-urlencoded">                
             <p>
                 <label for="firstName">First Name:</label>
                 <input id="firstName" type="text" placeholder="First Name" required  />
@@ -217,7 +217,7 @@
                 <textarea id="message" type="text" name="user_Message" required maxlength="140" rows="5"></textarea>
             </p> 
             <p class="button">
-                <button type="submitButton">Submit</button>
+                <button type="submit" id="submitButton">Submit</button>
             </p>
             </form>
             <!-- Embed Google Map feature -->

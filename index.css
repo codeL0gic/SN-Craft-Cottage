@@ -169,10 +169,24 @@ input:invalid:required {
 }
 
 retreat-create {
+    margin: 0 auto;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     font-size: 1.5em;
+    padding: 0 0.75em;
 }
+about-description {
+    margin: 10 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 2.5em;
+    padding: 0 0.75em;
+} 

@@ -40,13 +40,30 @@ aboutLink.addEventListener("click", showAboutContent);
 galleryLink.addEventListener("click", showGalleryContent);
 contactLink.addEventListener("click", showContactContent);
 
-/*Submit button validation*/
+/*--form Development
+const form = document.getElementById("contactForm");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message")
+
+form.addEventListener('submit', function(event) {
+  document.getElementById("submit".onclick = function() {})
+  event.preventDefault(); // Prevent the default behavior of reloading page//
+  alert('Form submitted');
+  console.log("Form submitted");
+  document.getElementById("contactForm").reset();
+
+});
+*/
+
+/*Submit button validation*
 const submitButton = document.getElementById("submitButton");
 const form = document.querySelector("form");
 const email = document.getElementById("email");
 const emailError = document.querySelector("#email + span.error");
 
 function submitButtonHandler(clickEvent) {
+
   clickEvent.preventDefault();
   if (!form.checkValidity()) {
     emailError.textContent = email.validationMessage;
@@ -67,4 +84,4 @@ submitButton.addEventListener("click", (submitButton) => {
     emailError.textContent = email.validationMessage;
     emailError.style.display = "block";
   }
-});
+})*/
