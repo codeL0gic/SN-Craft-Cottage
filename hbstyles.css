@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styles 
 
 body {
 
@@ -37,11 +37,11 @@ nav ul li a {
 
  
 
-/* Hamburger Icon Styles */
+/* Hamburger Icon Styles 
 
 .hamburger {
 
-    display: none; /* Hidden by default */
+    display: none; /* Hidden by default 
 
     flex-direction: column;
 
@@ -60,10 +60,10 @@ nav ul li a {
     top: 20px;
     right: 20px; /*align hb to right*/
 
-}
+
 
  
-
+/*
 .hamburger .bar {
 
     width: 30px;
@@ -78,11 +78,11 @@ nav ul li a {
 
  
 
-/* Navigation Menu (default: hidden on mobile) */
+/* Navigation Menu (default: hidden on mobile) 
 
 .nav-menu {
 
-    display: none; /* Hidden by default */
+    display: none; /* Hidden by default 
 
     background-color: #333;
 
@@ -92,7 +92,7 @@ nav ul li a {
 
 .nav-menu.active {
 
-    display: block; /* Show when active */
+    display: block; /* Show when active 
 
 }
 
@@ -120,13 +120,13 @@ nav ul li a {
 
  
 
-/* Responsive Design for Mobile */
+/* Responsive Design for Mobile 
 
 @media (max-width: 768px) {
 
     .hamburger {
 
-        display: flex; /* Show hamburger on mobile */
+        display: flex; /* Show hamburger on mobile 
 
     }
 
@@ -134,7 +134,7 @@ nav ul li a {
 
     nav ul {
 
-        display: none; /* Hide menu by default */
+        display: none; /* Hide menu by default 
 
     }
 
@@ -160,8 +160,6 @@ nav ul li a {
 
         display: flex; /* Show the menu when active */
 
-    }
-
-}
+    
 
  
