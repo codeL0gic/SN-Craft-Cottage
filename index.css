@@ -1,192 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
 .d-none {
-    display: none;
+  display: none;
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 .flex-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .justify-content-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .w-30 {
-    width: 30%;
+  width: 30%;
 }
 
 .w-45 {
-    width: 45%;
+  width: 45%;
 }
 .w-75 {
-    width: 75%;
+  width: 75%;
 }
 .h-auto {
-    height: auto;
+  height: auto;
 }
 
 body {
-    flex-wrap: wrap;
-    font-family: sans-serif;
-    margin: 0;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  margin: 0;
 }
 
 .ml-auto {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .font-size-20px {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .h-48px {
-    height: 48px;
+  height: 48px;
 }
 
 .margin-x-16px {
-    margin-left: 16px;
-    margin-right: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .mt-auto {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .justify-content-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-content-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .align-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 .min-height-100vh {
-    height: 100vh;
+  height: 100vh;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .p-16px {
-    padding: 16px;
+  padding: 16px;
 }
 
 .bg-sunflower-yellow {
-    background-color: #F7DFA1
+  background-color: #f7dfa1;
 }
 
 .bg-white {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 form {
-     /* form outline */
-    display:  inline-block;
-    padding: 1 em;
-    border: 1px solid #ccc;
-    border-radius: 1 em;
-    box-shadow: 0 0 10 px #ccc;
-   
+  /* form outline */
+  display: inline-block;
+  padding: 1 em;
+  border: 1px solid #ccc;
+  border-radius: 1 em;
+  box-shadow: 0 0 10 px #ccc;
 }
 
 p + p {
-    margin-top: 1 em;
+  margin-top: 1 em;
 }
 
 body {
-    /* Center the form on the page */
-    text-align: center;
-    display: flex;
-    padding: 1em;
-    justify-content: center;
+  /* Center the form on the page */
+  text-align: center;
+  display: flex;
+  padding: 1em;
+  justify-content: center;
 }
 label {
-    /* Size and alignment uniform */
-    display: inline-block;
-    min-width: 90px;
-    text-align: right;
+  /* Size and alignment uniform */
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
 }
-input, textarea {
-    /* make sure all text fields have the same font settings by default */
-    font: 1 em sands-serif;
-    width: 300 px;
-    box-sizing:  border-box;
-    border: 1 px solid #999;
+input,
+textarea {
+  /* make sure all text fields have the same font settings by default */
+  font: 1 em sands-serif;
+  width: 300 px;
+  box-sizing: border-box;
+  border: 1 px solid #999;
 }
-input:focus, textara:focus {
-    /* set outline width and style */
-    outline-style: solid;
-    outline-color: #000;
-    /* gives highlight to active element */
-    outline-width: 2px;
+input:focus,
+textara:focus {
+  /* set outline width and style */
+  outline-style: solid;
+  outline-color: #000;
+  /* gives highlight to active element */
+  outline-width: 2px;
 }
 
 textarea {
-    /* align text fields with labels */
-    vertical-align: top;
-    height: 5 em;
+  /* align text fields with labels */
+  vertical-align: top;
+  height: 5 em;
 }
 
-.button {
-    /* align buttons with the text fields */
-    padding-left: 90px;
-}
-button {
-    margin-left: 0.5em;;
-}
 input:invalid {
-    border: 2px dashed rgb(246, 246, 9);
+  border: 2px dashed rgb(246, 246, 9);
 }
 
 input:valid {
-    border: 2 px solid black;
+  border: 2 px solid black;
 }
 input:invalid:required {
-    background-image: linear-gradient(to right, rgb(236, 244, 236), rgb(207, 225, 118));
+  background-image: linear-gradient(
+    to right,
+    rgb(236, 244, 236),
+    rgb(207, 225, 118)
+  );
 }
 
 .contact-header {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1em;
-    padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.sr-only {
+  visibility: hidden;
+}
+
+.max-w-20px {
+  max-width: 20px;
+}
+
+.max-h-20px {
+  max-height: 20px;
+}
+
+.align-items-start {
+  align-items: start;
+}
+
+.list-style-type-none {
+  list-style-type: none;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.mb-16px {
+  margin-bottom: 16px;
+}
+
+.border-0 {
+  border: 0;
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 retreat-create {
-    margin: 0 auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-size: 1.5em;
-    padding: 0 0.75em;
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.5em;
+  padding: 0 0.75em;
 }
 about-description {
-    margin: 10 auto;
-    width: 50%;
+  margin: 10 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 2.5em;
+  padding: 0 0.75em;
+}
+
+#desktopLinks {
+  display: none;
+}
+
+#menuButton {
+  display: block;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #desktopLinks {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-size: 2.5em;
-    padding: 0 0.75em;
-} 
+  }
+
+  #menuButton {
+    display: none;
+  }
+}

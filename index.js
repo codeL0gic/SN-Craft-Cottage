@@ -1,7 +1,14 @@
+"use strict";
+
 const homeLink = document.getElementById("homeLink");
 const aboutLink = document.getElementById("aboutLink");
 const galleryLink = document.getElementById("galleryLink");
 const contactLink = document.getElementById("contactLink");
+
+const homeMobile = document.getElementById("homeMobile");
+const aboutMobile = document.getElementById("aboutMobile");
+const galleryMobile = document.getElementById("galleryMobile");
+const contactMobile = document.getElementById("contactMobile");
 
 const homeContent = document.getElementById("homeContent");
 const aboutContent = document.getElementById("aboutContent");
@@ -40,6 +47,36 @@ aboutLink.addEventListener("click", showAboutContent);
 galleryLink.addEventListener("click", showGalleryContent);
 contactLink.addEventListener("click", showContactContent);
 
+homeMobile.addEventListener("click", showHomeContent);
+aboutMobile.addEventListener("click", showAboutContent);
+galleryMobile.addEventListener("click", showGalleryContent);
+contactMobile.addEventListener("click", showContactContent);
+
+const menuButton = document.getElementById("menuButton");
+const navMenu = document.getElementById("navMenu");
+const desktopLinks = document.getElementById("desktopLinks");
+
+menuButton.addEventListener("click", function () {
+  navMenu.classList.toggle("active");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth < 768) {
+    desktopLinks.classList.remove("d-flex");
+    desktopLinks.classList.add("d-none");
+    navMenu.classList.remove("d-none");
+    navMenu.classList.add("d-block");
+    menuButton.classList.remove("d-none");
+    menuButton.classList.add("d-flex");
+  } else {
+    desktopLinks.classList.remove("d-none");
+    desktopLinks.classList.add("d-flex");
+    navMenu.classList.remove("d-flex");
+    navMenu.classList.add("d-none");
+    menuButton.classList.remove("d-flex");
+    menuButton.classList.add("d-none");
+  }
+});
 /*--form Development
 const form = document.getElementById("contactForm");
 const name = document.getElementById("name");

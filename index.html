@@ -9,38 +9,72 @@
   <body class="d-flex flex-column bg-sunflower-yellow">
     <div class="main-content w-100 min-height-100vh">
       <!-- overall navigation -->
-      <div class="nav d-flex flex-row justify-content-betweens bg-white">
+      <div class="nav d-flex flex-row justify-content-betweens bg-white p-16px">
         <!-- logo image -->
         <img
           class="logo w-30 h-auto"
           src="./media/craft cottage block logo.JPG"
           alt="Sunflower with Momma's Craft Cottage"
         />
-
+        <div class="flex-column justify-content-center align-items-start ml-auto mb-auto">
+          <button
+            id="menuButton"
+            class="btnHamburger border-0 bg-transparent"
+            type="button"
+            aria-label="Menu"
+            aria-controls="navigation"
+            aria-expanded="true/false"
+          >
+            <span class="hamburger-box">
+              <img
+                src="./media/Hamburger_icon.svg.png"
+                alt="hamburger menu icon"
+                class="w-100 h-auto max-w-20px max-h-20px"
+              />
+            </span>
+          </button>
+          <!--Navigation-->
+          <nav>
+            <ul class="menu list-style-type-none pl-0" id="navMenu">
+              <li class="d-flex justify-content-start mb-16px" id="homeMobile">
+                Home
+              </li>
+              <li class="d-flex justify-content-start mb-16px" id="aboutMobile">
+                About
+              </li>
+              <li class="d-flex justify-content-start mb-16px" id="galleryMobile">
+                Gallery
+              </li>
+              <li class="d-flex justify-content-start mb-16px" id="contactMobile">
+                Contact
+              </li>
+            </ul>
+          </nav>
+        </div>
         <!-- navigation links -->
-        <nav class="d-flex flex-row justify-content-between h-48px ml-auto">
+        <nav class="d-flex flex-row justify-content-between h-48px ml-auto" id="desktopLinks">
           <!-- home link -->
-          <button class="home-link font-size-20px margin-x-16px" id="homeLink">
+          <button class="home-link font-size-20px margin-x-16px border-0 bg-transparent" id="homeLink">
             Home
           </button>
 
           <!-- about link -->
           <button
-            class="about-link font-size-20px margin-x-16px"
+            class="about-link font-size-20px margin-x-16px border-0 bg-transparent"
             id="aboutLink"
           >
             About
           </button>
           <!-- gallery link -->
           <button
-            class="gallery-link font-size-20px margin-x-16px"
+            class="gallery-link font-size-20px margin-x-16px border-0 bg-transparent"
             id="galleryLink"
           >
            Gallery
           </button>
           <!-- contact link -->
           <button
-            class="contact-link font-size-20px margin-x-16px"
+            class="contact-link font-size-20px margin-x-16px border-0 bg-transparent"
             id="contactLink"
           >
             Contact
@@ -207,20 +241,12 @@
             <div class="contact-pic w-100 d-flex flex-row justify-content-center align-items-center">
             </div>
             <h4>Momma's Craft Cottage</H4>
-            <ul class="contact-info" list-style-type="none">
-              <div>
-              <span>Address:</span>
-              <span> 912 Jackson Branch Road</span>
-              <span>Nashville, Indiana 47448</span>
-             
-              <span>Phone:</span>
-              <span><a href="1+812-988-6185">1+812-988-6185</a></span>             
-             <li>
-              <span>Email:</span> 
-              <span><a href="mommascraftcottage@gmail.com"></a>mommascraftcottage@gmail.com</span>
-             </li>
-              </div>
-            </ul>
+            <div class="contact-info" list-style-type="none">
+              <p> 912 Jackson Branch Road</p>
+              <p>Nashville, Indiana 47448</p>
+              <p><a href="tel:1+812-988-6185">1+812-988-6185</a></p>             
+              <p><a href="mailto:mommascraftcottage@gmail.com">mommascraftcottage@gmail.com</a></p>
+            </div>
             <h2>Booking Inquiry</h2>
             <!--method= "POST"  enctype="application/x-www-form-urlencoded">-->
             <form id="Form" type="text" action="mailto:" method="POST" enctype="application/x-www-form-urlencoded">                
