@@ -217,15 +217,17 @@ retreat-create {
   font-size: 1.5em;
   padding: 0 0.75em;
 }
-about-description {
-  margin: 10 auto;
+
+/*how to make font look better,*/
+.about-Description {
+  margin: 20 auto;
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font-size: 2.5em;
+  font-size: 40px;
   padding: 0 0.75em;
 }
 
@@ -244,7 +246,7 @@ about-description {
 .menu.active {
     display: block;
 }
-
+/* Media query for mobile 
 @media screen and (min-width: 768px) {
   #desktopLinks {
     display: flex;
@@ -252,5 +254,5 @@ about-description {
 
   #menuButton {
     display: none;
-  }
+  }*/
 }
