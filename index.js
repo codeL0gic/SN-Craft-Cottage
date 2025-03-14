@@ -80,57 +80,33 @@ window.addEventListener("resize", function () {
   }
 });
 
-/*--form Development
-const form = document.getElementById("contactForm");
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message")
-
-form.addEventListener('submit', function(event) {
-  document.getElementById("submit".onclick = function() {})
-  event.preventDefault(); // Prevent the default behavior of reloading page//
-  alert('Form submitted');
-  console.log("Form submitted");
-  document.getElementById("contactForm").reset();
-
-});
-*/
-
-/*Submit button validation*
+/*--form Development*/
+const form = document.getElementById("Form");
 const submitButton = document.getElementById("submitButton");
-const form = document.querySelector("form");
-const email = document.getElementById("email");
-const emailError = document.querySelector("#email + span.error");
 
-function submitButtonHandler(clickEvent) {
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-  clickEvent.preventDefault();
-  if (!form.checkValidity()) {
-    emailError.textContent = email.validationMessage;
-    emailError.style.display = "block";
-  }
-}
+  // Get form values
+  const firstName = document.getElementById("firstName").value;
+  const lastName = document.getElementById("lastName").value;
+  const email = document.getElementById("emailAddress").value;
+  const phone = document.getElementById("phoneNumber").value;
+  const message = document.getElementById("message").value;
 
-email.addEventListener("input", (_event) => {
-  if (email.validity.typeMismatch) {
-    email.setCustomValidity("I expect an e-mail, darling!");
-  } else {
-    email.setCustomValidity("");
-  }
+  // Format email body
+  const emailBody = `
+        Name: ${firstName} ${lastName}
+        Email: ${email}
+        Phone: ${phone}
+        Message: ${message}
+    `;
+
+  // Create mailto link
+  const mailtoLink = `mailto:mommascraftcottage@gmail.com?subject=Booking Inquiry from ${firstName} ${lastName}&body=${encodeURIComponent(
+    emailBody
+  )}`;
+
+  // Open email client
+  window.location.href = mailtoLink;
 });
-
-submitButton.addEventListener("click", (submitButton) => {
-  if (!form.checkValidity()) {
-    emailError.textContent = email.validationMessage;
-    emailError.style.display = "block";
-  }
-})*/
-
-/*-Get references to the hamburger button and nav menu//
-
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("navMenu");
-
-hamburger.addEventListener("click", function () {
-  navMenu.classList.toggle("active");
-});*/
