@@ -57,26 +57,29 @@ const navMenu = document.getElementById("navMenu");
 const desktopLinks = document.getElementById("desktopLinks");
 
 menuButton.addEventListener("click", function () {
+  const navMenu = document.getElementById("navMenu");
+  // Remove d-none class when toggling active
+  navMenu.classList.remove("d-none");
   navMenu.classList.toggle("active");
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth < 768) {
-    desktopLinks.classList.remove("d-flex");
-    desktopLinks.classList.add("d-none");
-    navMenu.classList.remove("d-none");
-    navMenu.classList.add("d-block");
-    menuButton.classList.remove("d-none");
-    menuButton.classList.add("d-flex");
-  } else {
-    desktopLinks.classList.remove("d-none");
-    desktopLinks.classList.add("d-flex");
-    navMenu.classList.remove("d-flex");
+window.addEventListener("resize", function () {
+  const width = window.innerWidth;
+  const navMenu = document.getElementById("navMenu");
+  const menuButton = document.getElementById("menuButton");
+  const desktopLinks = document.getElementById("desktopLinks");
+
+  if (width >= 769) {
+    navMenu.classList.remove("active");
     navMenu.classList.add("d-none");
-    menuButton.classList.remove("d-flex");
-    menuButton.classList.add("d-none");
+    menuButton.style.display = "none";
+    desktopLinks.style.display = "flex";
+  } else {
+    menuButton.style.display = "flex";
+    desktopLinks.style.display = "none";
   }
 });
+
 /*--form Development
 const form = document.getElementById("contactForm");
 const name = document.getElementById("name");

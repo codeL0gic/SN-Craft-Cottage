@@ -231,28 +231,33 @@ retreat-create {
   padding: 0 0.75em;
 }
 
+#menuButton {
+  display: flex;
+  cursor: pointer;
+}
+
 #desktopLinks {
   display: none;
 }
 
-#menuButton {
-  display: block;
-}
-
 .menu {
-    display: none;
+  display: none;
 }
 
 .menu.active {
-    display: block;
+  display: block;
 }
-/* Media query for mobile 
+
 @media screen and (min-width: 768px) {
-  #desktopLinks {
-    display: flex;
+  #menuButton {
+    display: none !important;
   }
 
-  #menuButton {
-    display: none;
-  }*/
+  #desktopLinks {
+    display: flex !important;
+  }
+
+  .menu {
+    display: none !important;
+  }
 }

@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momma's Craft Cottage</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <!-- overall body -->
-  <body class="d-flex flex-column bg-sunflower-yellow">
-    <div class="main-content w-100 min-height-100vh">
+  <body class="bg-sunflower-yellow">
+    <div class="main-content d-flex flex-column w-100 min-height-100vh">
       <!-- overall navigation -->
       <div class="nav d-flex flex-row justify-content-betweens bg-white p-16px">
         <!-- logo image -->
@@ -16,7 +17,10 @@
           src="./media/craft cottage block logo.JPG"
           alt="Sunflower with Momma's Craft Cottage"
         />
-        <div class="flex-column justify-content-center align-items-start ml-auto mb-auto">
+        <!-- hamburger menu -->
+        <div
+          class="flex-column justify-content-center align-items-start ml-auto mb-auto"
+        >
           <button
             id="menuButton"
             class="btnHamburger border-0 bg-transparent"
@@ -42,19 +46,31 @@
               <li class="d-flex justify-content-start mb-16px" id="aboutMobile">
                 About
               </li>
-              <li class="d-flex justify-content-start mb-16px" id="galleryMobile">
+              <li
+                class="d-flex justify-content-start mb-16px"
+                id="galleryMobile"
+              >
                 Gallery
               </li>
-              <li class="d-flex justify-content-start mb-16px" id="contactMobile">
+              <li
+                class="d-flex justify-content-start mb-16px"
+                id="contactMobile"
+              >
                 Contact
               </li>
             </ul>
           </nav>
         </div>
         <!-- navigation links -->
-        <nav class="d-flex flex-row justify-content-between h-48px ml-auto" id="desktopLinks">
+        <nav
+          class="d-none flex-row justify-content-between h-48px ml-auto"
+          id="desktopLinks"
+        >
           <!-- home link -->
-          <button class="home-link font-size-20px margin-x-16px border-0 bg-transparent" id="homeLink">
+          <button
+            class="home-link font-size-20px margin-x-16px border-0 bg-transparent"
+            id="homeLink"
+          >
             Home
           </button>
 
@@ -70,7 +86,7 @@
             class="gallery-link font-size-20px margin-x-16px border-0 bg-transparent"
             id="galleryLink"
           >
-           Gallery
+            Gallery
           </button>
           <!-- contact link -->
           <button
@@ -88,15 +104,14 @@
         <div class="pic-of-property">
           <div class="pic-wrapper">
             <img
-              class="House"
+              class="House w-100 h-auto"
               src="./media/cottageFrontCloseupSnow.jpg"
-              width="900"
               alt="Front of House"
             />
             <figcaption>Momma's Craft Cottage</figcaption>
           </div>
         </div>
-        
+
         <h2>Retreat to Momma's Craft Cottage</h2>
         <div class="retreat-create">
           <p>
@@ -123,7 +138,7 @@
           </dl>
         </div>
         <!-- Embed Google Map feature -->
-        <div class="location-map" id="map" style="display: flex;">
+        <div class="location-map" id="map" style="display: flex">
           <div
             style="
               text-decoration: none;
@@ -131,7 +146,6 @@
               max-width: 100%;
               width: 500px;
               height: 300px;
-              
             "
           >
             <div
@@ -139,7 +153,7 @@
               style="height: 100%; width: 100%; max-width: 100%"
             >
               <iframe
-                style="height: 100%; width: 100%; border: 0 "
+                style="height: 100%; width: 100%; border: 0"
                 frameborder="0"
                 src="https://www.google.com/maps/embed/v1/place?q=912+Jackson+Branch+Road,+Nashville,+Indiana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
               ></iframe>
@@ -163,13 +177,16 @@
           </p>
           <p>
             Momma's Craft Cottage is a family owned and operated business. We
-            are located in the heart of Brown County, Indiana. Our retreat is inspired by our mothers and the love they displayed for their families. We are excited to share our love of crafting with you and your friends. We hope you will join us for a retreat soon!
+            are located in the heart of Brown County, Indiana. Our retreat is
+            inspired by our mothers and the love they displayed for their
+            families. We are excited to share our love of crafting with you and
+            your friends. We hope you will join us for a retreat soon!
           </p>
           <img
-                class="host w-45"
-                src="./media/host-Image.JPEG"
-                alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
-              />
+            class="host w-45"
+            src="./media/host-Image.JPEG"
+            alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
+          />
           <!--<div class="pic-of-host">-->
         </div>
 
@@ -181,7 +198,9 @@
       <!-- gallery page -->
       <div class="gallery d-none w-100" id="galleryContent">
         <h2>Gallery</h2>
-        <div class="fit-picture d-flex flex-row flex-wrap">
+        <div
+          class="fit-picture d-flex flex-row justify-content-center flex-wrap"
+        >
           <img
             class="frontHouse w-45 h-auto p-16px"
             src="./media/cottageFrontSnow.jpg"
@@ -239,64 +258,104 @@
         <div>
           <div class="contact-header">
             <h2>Contact Us</h2>
-            <div class="contact-pic w-100 d-flex flex-row justify-content-center align-items-center">
-            </div>
-            <h4>Momma's Craft Cottage</H4>
+            <div
+              class="contact-pic w-100 d-flex flex-row justify-content-center align-items-center"
+            ></div>
+            <h4>Momma's Craft Cottage</h4>
             <div class="contact-info" list-style-type="none">
-              <p> 912 Jackson Branch Road</p>
+              <p>912 Jackson Branch Road</p>
               <p>Nashville, Indiana 47448</p>
-              <p><a href="tel:1+812-988-6185">1+812-988-6185</a></p>             
-              <p><a href="mailto:mommascraftcottage@gmail.com">mommascraftcottage@gmail.com</a></p>
+              <p><a href="tel:1+812-988-6185">1+812-988-6185</a></p>
+              <p>
+                <a href="mailto:mommascraftcottage@gmail.com"
+                  >mommascraftcottage@gmail.com</a
+                >
+              </p>
             </div>
             <h2>Booking Inquiry</h2>
             <!--method= "POST"  enctype="application/x-www-form-urlencoded">-->
-            <form id="Form" type="text" action="mailto:" method="POST" enctype="application/x-www-form-urlencoded">                
-            <p>
+            <form
+              id="Form"
+              type="text"
+              action="mailto:"
+              method="POST"
+              enctype="application/x-www-form-urlencoded"
+            >
+              <p>
                 <label for="firstName">First Name:</label>
-                <input id="firstName" type="text" placeholder="First Name" required  />
-            </p>
-            <p>
+                <input
+                  id="firstName"
+                  type="text"
+                  placeholder="First Name"
+                  required
+                />
+              </p>
+              <p>
                 <label for="lastName">Last Name:</label>
-                <input id="lastName" type="text" placeholder="Last Name" required />
-                </p>
-            
-            <p>   
-                <label for="emailAddress">Email Address:</label> 
-                <input id="emailAddress" type="email" placeholder="Email Address" required/>
-            </p>
-            <p>
+                <input
+                  id="lastName"
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                />
+              </p>
+
+              <p>
+                <label for="emailAddress">Email Address:</label>
+                <input
+                  id="emailAddress"
+                  type="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </p>
+              <p>
                 <label for="phoneNumber">Phone Number:</label>
-                <input id="phoneNumber" type="tel" placeholder="Phone Number" required/>
-            </p>
-            <p>
+                <input
+                  id="phoneNumber"
+                  type="tel"
+                  placeholder="Phone Number"
+                  required
+                />
+              </p>
+              <p>
                 <label for="message">Message:</label>
-                <textarea id="message" type="text" name="user_Message" required maxlength="140" rows="5"></textarea>
-            </p> 
-            <p class="button">
+                <textarea
+                  id="message"
+                  type="text"
+                  name="user_Message"
+                  required
+                  maxlength="140"
+                  rows="5"
+                ></textarea>
+              </p>
+              <p class="button">
                 <button type="submit" id="submitButton">Submit</button>
-            </p>
+              </p>
             </form>
             <!-- Embed Google Map feature -->
-        <div class="location-map">
-            <div
-              style="
-                text-decoration: none;
-                overflow: hidden;
-                max-width: 100%;
-                width: 500px;
-                height: 500px;
-              "
-            >
+            <div class="location-map">
               <div
-                id="google-maps-canvas"
-                style="height: 100%; width: 100%; max-width: 100%"
+                style="
+                  text-decoration: none;
+                  overflow: hidden;
+                  max-width: 100%;
+                  width: 500px;
+                  height: 500px;
+                "
               >
-                <iframe
-                  style="height: 100%; width: 100%; border: 0"
-                  frameborder="0"
-                  src="https://www.google.com/maps/embed/v1/place?q=912+Jackson+Branch+Road,+Nashville,+Indiana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                ></iframe>
+                <div
+                  id="google-maps-canvas"
+                  style="height: 100%; width: 100%; max-width: 100%"
+                >
+                  <iframe
+                    style="height: 100%; width: 100%; border: 0"
+                    frameborder="0"
+                    src="https://www.google.com/maps/embed/v1/place?q=912+Jackson+Branch+Road,+Nashville,+Indiana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                  ></iframe>
+                </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
