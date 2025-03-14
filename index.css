@@ -206,6 +206,13 @@ input:invalid:required {
   background-color: transparent;
 }
 
+.pb-32px {
+  padding-bottom: 32px;
+}
+
+.p-0 {
+  padding: 0;
+}
 retreat-create {
   margin: 0 auto;
   width: 50%;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <!-- overall body -->
-  <body class="bg-sunflower-yellow">
+  <body class="bg-sunflower-yellow w-100 p-0">
     <div class="main-content d-flex flex-column w-100 min-height-100vh">
       <!-- overall navigation -->
       <div class="nav d-flex flex-row justify-content-betweens bg-white p-16px">
@@ -99,7 +99,7 @@
       </div>
 
       <!-- home page -->
-      <div class="home w-100" id="homeContent">
+      <div class="home w-100 pb-32px" id="homeContent">
         <h1>Momma's Craft Cottage</h1>
         <div class="pic-of-property">
           <div class="pic-wrapper">
@@ -138,7 +138,11 @@
           </dl>
         </div>
         <!-- Embed Google Map feature -->
-        <div class="location-map" id="map" style="display: flex">
+        <div
+          class="location-map d-flex flex-row justify-content-center"
+          id="map"
+          style="display: flex"
+        >
           <div
             style="
               text-decoration: none;
@@ -163,7 +167,7 @@
       </div>
 
       <!-- about page -->
-      <div class="about d-none w-100" id="aboutContent">
+      <div class="about d-none w-100 pb-32px" id="aboutContent">
         <h1>About Momma's Craft Cottage</h1>
         <div class="about-description">
           <p>
@@ -196,7 +200,7 @@
         </div>
       </div>
       <!-- gallery page -->
-      <div class="gallery d-none w-100" id="galleryContent">
+      <div class="gallery d-none w-100 pb-32px" id="galleryContent">
         <h2>Gallery</h2>
         <div
           class="fit-picture d-flex flex-row justify-content-center flex-wrap"
@@ -254,7 +258,7 @@
         </div>
       </div>
       <!-- contact page -->
-      <div class="contact d-none w-100" id="contactContent">
+      <div class="contact d-none w-100 pb-32px" id="contactContent">
         <div>
           <div class="contact-header">
             <h2>Contact Us</h2>
@@ -333,14 +337,18 @@
               </p>
             </form>
             <!-- Embed Google Map feature -->
-            <div class="location-map">
+            <div
+              class="location-map d-flex flex-row justify-content-center"
+              id="map"
+              style="display: flex"
+            >
               <div
                 style="
                   text-decoration: none;
                   overflow: hidden;
                   max-width: 100%;
                   width: 500px;
-                  height: 500px;
+                  height: 300px;
                 "
               >
                 <div
@@ -358,8 +366,9 @@
           </div>
         </div>
       </div>
+
       <footer
-        class="d-flex flex-row justify-content-center align-items-center w-100 mt-auto bg-white"
+        class="d-flex flex-row justify-content-center align-items-center w-100 mt-auto bg-white p-16px"
       >
         <div class="fb-wrapper margin-x-16px">
           <a href="">
