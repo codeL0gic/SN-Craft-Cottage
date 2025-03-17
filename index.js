@@ -107,6 +107,70 @@ form.addEventListener("submit", function (event) {
     emailBody
   )}`;
 
-  // Open email client
+  //*-- Open email client
   window.location.href = mailtoLink;
+  //commented out to prevent form submission
 });
+// Form handling with localStorage Form handling with localStorage
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("Form");
+  const submitButton = document.getElementById("submitButton");
+
+  // Load any existing form data from localStorage
+  const loadFormData = () => {
+    const savedData = localStorage.getItem("formData");
+    if (savedData) {
+      const formData = JSON.parse(savedData);
+      document.getElementById("firstName").value = formData.firstName || "";
+      document.getElementById("lastName").value = formData.lastName || "";
+      document.getElementById("emailAddress").value = formData.email || "";
+      document.getElementById("phoneNumber").value = formData.phone || "";
+      document.getElementById("message").value = formData.message || "";
+    }
+  };
+
+  // Save form data to localStorage
+  const saveFormData = () => {
+    const formData = {
+      firstName: document.getElementById("firstName").value,
+      lastName: document.getElementById("lastName").value,
+      email: document.getElementById("emailAddress").value,
+      phone: document.getElementById("phoneNumber").value,
+      message: document.getElementById("message").value,
+      timestamp: new Date().toISOString(),
+    };
+
+    localStorage.setItem("formData", JSON.stringify(formData));
+    console.log("Form data saved:", formData); // Debug line
+  };
+
+  // Handle form submission
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Save form data
+    saveFormData();
+
+    // Show success message
+    alert("Form data has been saved!");
+
+    // Optional: Clear form after submission
+    form.reset();
+    localStorage.removeItem("formData");
+  });
+
+  // Save form data as user types (optional)
+  form.addEventListener("input", saveFormData);
+
+  // Load saved data when page loads
+  loadFormData();
+});
+// To view stored data
+const storedData = JSON.parse(localStorage.getItem("formData"));
+console.log(storedData);
+
+//fb icon
+<script
+  src="https://kit.fontawesome.com/2314558ef0.js"
+  crossorigin="anonymous"
+></script>;

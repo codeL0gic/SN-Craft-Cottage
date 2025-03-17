@@ -81,7 +81,11 @@ body {
 .min-height-100vh {
   height: 100vh;
 }
-
+ 
+.w-30 {
+  width: 30%;
+  height: auto;
+}
 .w-100 {
   width: 100%;
 }
@@ -166,6 +170,13 @@ input:invalid:required {
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
+  padding: 1em;
+}
+
+.contact-info {
+  font-size: 16px;
+  text-align: center;
   margin-bottom: 1em;
   padding: 1em;
 }
@@ -225,9 +236,9 @@ retreat-create {
   padding: 0 0.75em;
 }
 
-/*how to make font look better,*/
+/*how to make font look better,
 .about-Description {
-  margin: 20 auto;
+  margin: 40 auto;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -236,11 +247,12 @@ retreat-create {
   height: 100vh;
   font-size: 40px;
   padding: 0 0.75em;
-}
+}*/
 
 #menuButton {
   display: flex;
   cursor: pointer;
+  padding-right: 40px;
 }
 
 #desktopLinks {
@@ -254,7 +266,15 @@ retreat-create {
 .menu.active {
   display: block;
 }
+.fb-wrapper a {
+  color: #4267B2; /* Facebook blue */
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
 
+.fb-wrapper a:hover {
+  opacity: 0.8;
+}
 @media screen and (min-width: 768px) {
   #menuButton {
     display: none !important;
