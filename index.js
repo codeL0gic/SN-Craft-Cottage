@@ -111,7 +111,7 @@ form.addEventListener("submit", function (event) {
   window.location.href = mailtoLink;
   //commented out to prevent form submission
 });
-// Form handling with localStorage Form handling with localStorage
+/* Form handling with localStorage Form handling with localStorage
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("Form");
   const submitButton = document.getElementById("submitButton");
@@ -167,10 +167,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // To view stored data
 const storedData = JSON.parse(localStorage.getItem("formData"));
-console.log(storedData);
-
-//fb icon
-<script
-  src="https://kit.fontawesome.com/2314558ef0.js"
-  crossorigin="anonymous"
-></script>;
+console.log(storedData);*/
