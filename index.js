@@ -126,3 +126,12 @@ form.addEventListener("submit", function (event) {
   form.reset();
   localStorage.clear();
 });
+
+//*Bible Verse API development
+const verseOne = fetch("")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    // const verseOne = document.getElementById("verseOne");
+    // verseOne.innerHTML = data[0].text;
+  });
