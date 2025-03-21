@@ -186,9 +186,17 @@ async function getRandomVerse() {
 
 document.addEventListener("DOMContentLoaded", async function () {
   const verseData = await getRandomVerse();
-  // if (verseData) {
-  //   verse.textContent = verseData.data[0].reference;
-  //   verseContent.textContent = verseData.data[0].content;
-  // }
-  console.log("Verse data:", verseData);
+  if (verseData && verseData.data) {
+    // Remove the # from getElementById calls
+    const verseContent = document.getElementById("verse-content");
+    const verseReference = document.getElementById("verse");
+
+    // Update content if elements exist
+    if (verseContent && verseReference) {
+      // Clean and set content
+      const cleanContent = verseData.data.content.replace(/<[^>]*>/g, "");
+      verseContent.textContent = cleanContent;
+      verseReference.textContent = verseData.data.reference;
+    }
+  }
 });
