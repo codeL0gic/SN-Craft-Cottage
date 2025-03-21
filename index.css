@@ -122,6 +122,54 @@ body {
   padding: 1em;
   justify-content: center;
 }
+
+.pic-of-property {
+  margin: 2rem 0;
+}
+
+.pic-of-property {
+  margin: 2rem 0;
+}
+
+.pic-wrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.p-1);
+}
+
+.pic-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.pic-wrapper:hover img {
+  transform: scale(1.12);
+}
+figcaption {
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+  color: #666;
+
+}
+
+/* Headings*/
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'comic sans ms', sans-serif;
+}
+h2 {
+  font-size: 2rem;
+  color: #34495e;
+  margin: 2rem 0 1rem;
+  font-family: 'garamond', serif;
+}
+
 label {
   /* Size and alignment uniform */
   display: inline-block;
@@ -152,7 +200,7 @@ textarea {
 }
 
 input:invalid {
-  border: 2px dashed rgb(246, 246, 9);
+  border: 2px dashed rgb(201, 201, 189);
 }
 
 input:valid {
@@ -162,7 +210,7 @@ input:invalid:required {
   background-image: linear-gradient(
     to right,
     rgb(236, 244, 236),
-    rgb(207, 225, 118)
+    rgb(247, 248, 241)
   );
 }
 

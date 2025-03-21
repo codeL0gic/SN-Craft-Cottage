@@ -7,6 +7,8 @@
       property="article:publisher"
       content="https://www.facebook.com/mommascraftcottage"
     />
+    <!-- Replace the existing Google Maps script with this one -->
+
     <title>Momma's Craft Cottage</title>
     <link rel="stylesheet" href="index.css" />
     <link
@@ -154,6 +156,7 @@
           style="display: flex"
         >
           <div
+            id="google-maps-canvas"
             style="
               text-decoration: none;
               overflow: hidden;
@@ -162,16 +165,7 @@
               height: 300px;
             "
           >
-            <div
-              id="google-maps-canvas"
-              style="height: 100%; width: 100%; max-width: 100%"
-            >
-              <iframe
-                style="height: 100%; width: 100%; border: 0"
-                frameborder="0"
-                src="https://www.google.com/maps/embed/v1/place?q=912+Jackson+Branch+Road,+Nashville,+Indiana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              ></iframe>
-            </div>
+            <!-- Map will be loaded here -->
           </div>
         </div>
       </div>
