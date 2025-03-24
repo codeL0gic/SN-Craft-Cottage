@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Garamond", sans-serif;
 }
 
 .d-none {
@@ -53,17 +54,27 @@ body {
   height: 48px;
 }
 
-.margin-x-16px {
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
 .mt-auto {
   margin-top: auto;
 }
 
 .flex-column {
   flex-direction: column;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.position-absolute {
+  position: absolute;
+}
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
 }
 
 .justify-content-around {
@@ -81,7 +92,7 @@ body {
 .min-height-100vh {
   height: 100vh;
 }
- 
+
 .w-30 {
   width: 30%;
   height: auto;
@@ -94,12 +105,38 @@ body {
   padding: 16px;
 }
 
+.pt-16px {
+  padding-top: 16px;
+}
+
 .bg-sunflower-yellow {
   background-color: #f7dfa1;
 }
 
 .bg-white {
   background-color: #fff;
+}
+
+dl,
+ul {
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+}
+dd {
+  position: relative;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin-left: 0;
+  margin-right: 0;
+}
+dd::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #f7dfa1;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 form {
@@ -111,10 +148,6 @@ form {
   box-shadow: 0 0 10 px #ccc;
 }
 
-p + p {
-  margin-top: 1 em;
-}
-
 body {
   /* Center the form on the page */
   text-align: center;
@@ -123,19 +156,19 @@ body {
   justify-content: center;
 }
 
-.pic-of-property {
-  margin: 2rem 0;
+.border-radius-64px {
+  border-radius: 64px;
 }
 
-.pic-of-property {
-  margin: 2rem 0;
+.border-radius-16px {
+  border-radius: 16px;
 }
 
 .pic-wrapper {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.p-1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0p-1);
 }
 
 .pic-wrapper img {
@@ -153,23 +186,20 @@ figcaption {
   padding: 1rem;
   font-style: italic;
   color: #666;
-
 }
 
 /* Headings*/
 h1 {
   font-size: 1.8rem;
   color: #2c3e50;
-  text-align: center;padding: 0 1 rem;
-  margin-bottom: 1.5rem;
-  font-family: 'Garamond', sans-serif;
+  text-align: center;
+  padding: 1rem;
 }
+
 h2 {
   font-size: 2rem;
   padding: 0 1rem;
   color: #34495e;
-  margin: 2rem 0 1rem;
-  font-family: 'garamond', serif;
 }
 
 label {
@@ -219,60 +249,50 @@ input:invalid:required {
 .contact-header {
   width: 100%;
   max-width: 600px;
-  margin: 1rem auton;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  background-color:  white;
+  background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-header h2 {
   font-size: 1.8rem;
-  color:#2c3e50;
-  font-family: 'Garamond', serif;
-  margin-bottom: 1.5rem;
+  color: #2c3e50;
 }
 
 .contact-header h4 {
   font-size: 1.4rem;
-  color:#34495e;
-  font-family: 'Georgia', serif;
-  margin: 1rem 0;
+  color: #34495e;
 }
 
 .contact-info {
   width: 100%;
   max-width: 600px;
-  margin: 1rem auto;
   padding: 1.5rem;
   background-color: #f7dfa1;
   border-radius: 8px;
-  box-shadow: 0 2 px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2 px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-family: 'Georgia', serif;
-  
 }
 
 .contact-info a {
-  color:#4267B2;
+  color: #4267b2;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .contact-info a:hover {
-  color:#2c3e50;
-
+  color: #2c3e50;
 }
 form {
   width: 100%;
   max-width: 600px;
-  margin: 1rem auto;
   padding: 1.5rem;
   background-color: #f7dfa1;
   border-radius: 8px;
-  box-shadow: 0 2 px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2 px 4px rgba(0, 0, 0, 0.1);
   border: none;
 }
 .sr-only {
@@ -318,74 +338,110 @@ form {
 .p-0 {
   padding: 0;
 }
+
+.pr-16px {
+  padding-right: 16px;
+}
+
+.p-32px {
+  padding: 32px;
+}
+
+.py-32px {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .retreat-create {
   width: 100%;
-  margin: 1rem auto;
-  diplay: flex;
+  display: flex;
   flex-direction: column;
-  padding: 2rem;
   background-color: white;
   border-radius: 8 px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   min-height: auto;
   font-size: 1.1rem;
 }
-.retreat-create p{
-  font-size: 1.1. rem;
+.retreat-create p {
+  font-size: 11. rem;
   line-height: 1.6;
   color: #2c3e50;
   text-align: left;
-  margin-bottom: 1 rem;
   background-color: white;
   border-radius: 8 px;
-  box-shadow: 0 2 px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2 px 4px rgba(0, 0, 0, 0.1);
 }
 /*how to make font look better,*/
 .about-description {
   width: 100%;
-  margin: 1rem auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   min-height: auto;
   font-size: 1.1rem;
 }
 .about-description p {
   line-height: 1.6;
-  color:#2c3e50;
+  color: #2c3e50;
   text-align: left;
-  margin-bottom: 1.5rem;
-  font-family: 'Georgia' serif;
+  font-family: "Georgia" serif;
 }
- #menuButton {
+#menuButton {
   display: flex;
   cursor: pointer;
-  padding-right: 40px;
 }
 
 #desktopLinks {
   display: none;
 }
-
+/* mobile styles */
 .menu {
   display: none;
 }
-
 
 .menu.active {
   display: block;
 }
 .fb-wrapper a {
-  color: #4267B2; /* Facebook blue */
+  color: #4267b2; /* Facebook blue */
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
 .fb-wrapper a:hover {
   opacity: 0.8;
+}
+
+.box-shadow {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.py-16px {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.h-45 {
+  height: 45%;
+}
+
+.max-height-150px {
+  max-height: 150px;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.h-100px {
+  height: 100px;
 }
 @media screen and (min-width: 768px) {
   #menuButton {
@@ -403,35 +459,204 @@ form {
   .retreat-to-create p,
   .retreat-to-create dd {
     width: 80%;
-    margin: 1.5rem auto;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.2rem;
   }
   .contact-header {
     padding: 1rem;
-    margin: 0.5rem;
   }
-  .contact-indo {
+  .contact-info {
     width: 90%;
     padding: 1rem;
   }
+  dl,
+  ul {
+    max-width: 80%;
+  }
+  dd {
+    font-size: 1.2rem;
+  }
+
+  .py-md-32px {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .py-md-64px {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .retreat-create,
   .retreat-to-create p,
-  .retreat-to-create dd {
+  .retreat-to-create dd .about-description,
+  .contact-header,
+  .contact-info,
+  form {
     max-width: 800px;
     width: 70%;
-    margin: 2rem auto;
     font-size: 1.25rem;
   }
-  .about-description{
+  .about-description {
     max-width: 800px;
     width: 70%;
-    margin: 2 rem auto;
     font-size: 1.25rem;
   }
-  .about-description p{
+  .about-description p {
     line-height: 1.8;
   }
+  dl,
+  ul {
+    max-width: 800px;
+  }
+  dd {
+    font-size: 1.25rem;
+  }
+
+  /*Text sizes for desktop*/
+  .retreat-create p,
+  .retreat-to-create p,
+  .retreat-to-create dd,
+  .about-description p,
+  .contact-info,
+  form label {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  /* Heading sizes for desktop */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  /* form elements desktop */
+  form input,
+  form textarea {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  /* container spacing */
+  .container {
+    padding: 2rem;
+  }
+
+  .retreat-create .retreat-to-create,
+  .about-description,
+  .contact-header,
+  .contact-info,
+  form {
+    max-width: 800 px;
+    width: 70%;
+    padding: 2.5rem;
+  }
+
+  /* typography for desktop */
+  .retreat-create p,
+  .retreat-to-create p,
+  .retreat-to-create dd,
+  .about-description p,
+  .contact-info p,
+  form label {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+
+  /*heading hierarchy */
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  /*list styling*/
+  dl,
+  ul {
+    max-width: 800px;
+    padding: 0 2rem;
+  }
+
+  dd {
+    font-size: 1.25rem;
+  }
+  /* form elements */
+  form input,
+  form textarea {
+    padding: 1 rem;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  /*images and media */
+  .pic-wrapper {
+    max-width: 900px;
+  }
+  .pic-wrapper img {
+    padding: 0;
+  }
+
+  /*footer*/
+  footer {
+    padding: 2rem 0;
+  }
+
+  #desktopLInks button,
+  .menu li {
+    padding: 0.8rem 1.5rem;
+    color: #2c3e50;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+  }
+
+  #desktopLinks button::after,
+  .menu li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 16px;
+    left: 50%;
+    background-color: #f7dfa1;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  #desktopLinks button:hover::after,
+  .menu li:hover::after {
+    width: 80%;
+  }
+
+  /*active state*/
+  #desktopLinks button:active,
+  .menu li:active {
+    transform: scale(0.98);
+  }
+
+  #desktopLinks {
+    gap: 1 rem;
+  }
+
+  #desktopLinks button {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
 }

@@ -20,22 +20,22 @@
   <body class="bg-sunflower-yellow w-100 p-0">
     <div class="main-content d-flex flex-column w-100 min-height-100vh">
       <!-- overall navigation -->
-      <div class="nav d-flex flex-row justify-content-betweens bg-white p-16px">
+      <div class="nav d-flex flex-row justify-content-betweens bg-white p-16px max-height-150px">
         <!-- logo image -->
 
         <img
-          class="logo w-30 h-auto"
+          class="logo w-100px h-100px"
           src="./media/craft cottage block logo.JPG"
           alt="Sunflower with Momma's Craft Cottage"
         />
 
         <!-- hamburger menu -->
         <div
-          class="flex-column justify-content-center align-items-start ml-auto mb-auto"
+          class="position-absolute top-0 right-0 pt-16px flex-column justify-content-center align-items-start ml-auto mb-auto"
         >
           <button
             id="menuButton"
-            class="btnHamburger border-0 bg-transparent"
+            class="btnHamburger border-0 bg-transparent ml-auto pr-16px"
             type="button"
             aria-label="Menu"
             aria-controls="navigation"
@@ -51,7 +51,10 @@
           </button>
           <!--Navigation-->
           <nav>
-            <ul class="menu list-style-type-none pl-0" id="navMenu">
+            <ul
+              class="menu list-style-type-none bg-white p-16px box-shadow"
+              id="navMenu"
+            >
               <li class="d-flex justify-content-start mb-16px" id="homeMobile">
                 Home
               </li>
@@ -112,11 +115,11 @@
 
       <!-- home page -->
       <div class="home w-100 pb-32px max-width 75" id="homeContent">
-        <h1>Momma's Craft Cottage</h1>
+        <h1 class="m-0 py-16px py-md-32px">Momma's Craft Cottage</h1>
         <div class="pic-of-property">
-          <div class="pic-wrapper">
+          <div class="pic-wrapper mx-auto">
             <img
-              class="House w-100 h-auto"
+              class="House w-100 h-auto border-radius-64px"
               src="./media/cottageFrontCloseupSnow.jpg"
               alt="Front of House"
             />
@@ -124,9 +127,11 @@
           </div>
         </div>
 
-        <h2>Retreat to Momma's Craft Cottage</h2>
-        <div class="retreat-create p-32px w-100 justify-content-between">
-          <p>
+        <h2 class="m-0 py-16px py-md-32px">Retreat to Momma's Craft Cottage</h2>
+        <div
+          class="retreat-create p-32px w-100 justify-content-between mx-auto border-radius-16px"
+        >
+          <p class="m-0 py-16px py-md-32px">
             Retreat to Momma's Craft Cottage with 9 of your friends to be in
             Scrapbook heaven. The cottage features a cozy 3 bedroom that will
             sleep 9 and includes 2 baths, on a scenic country road in legendary
@@ -135,32 +140,38 @@
             View Calendar and Make a Reservation!
           </p>
         </div>
-        <h2>Retreat. Create.</h2>
-        <div class="retreat-to-create p-16px w-100 justify-content-between">
-          <p>Momma's Craft Cottage features:</p>
+        <h2 class="m-0 py-16px py-md-32px">Retreat. Create.</h2>
+        <div
+          class="retreat-to-create d-flex flex-column p-16px justify-content-center align-items-center"
+        >
+          <p class="m-0 py-16px py-md-32px mx-auto">
+            Momma's Craft Cottage features:
+          </p>
           <dl>
-            <dd>1 spacious workroom on main level</dd>
-            <dd>Easy access to unload supplies - no stairs</dd>
-            <dd>6 individual tables with side tables</dd>
-            <dd>
+            <dd class="mx-auto">1 spacious workroom on main level</dd>
+            <dd class="mx-auto">Easy access to unload supplies - no stairs</dd>
+            <dd class="mx-auto">6 individual tables with side tables</dd>
+            <dd class="mx-auto">
               Great overhead lighting, 6 individual table lights, and lots of
               natural lighting
             </dd>
-            <dd>Individual power strips with USB and USB-C outlets</dd>
+            <dd class="mx-auto">
+              Individual power strips with USB and USB-C outlets
+            </dd>
           </dl>
         </div>
-        <div id="versesContent" class="verse-container p-16px w-100 bg-white">
+        <div id="versesContent" class="verse-container p-32px bg-white">
           <div id="verse" class="verse-reference"></div>
           <div id="verse-content" class="verse-text"></div>
         </div>
         <!-- Embed Google Map feature -->
         <div
-          class="location-map d-flex flex-row justify-content-center"
+          class="location-map d-flex flex-row justify-content-center py-16px py-md-32px"
           id="map"
           style="display: flex"
         >
           <div
-            id="google-maps-canvas"
+          class="border-radius-16px"
             style="
               text-decoration: none;
               overflow: hidden;
@@ -169,16 +180,27 @@
               height: 300px;
             "
           >
-            <!-- Map will be loaded here -->
+            <div
+              id="google-maps-canvas"
+              style="height: 100%; width: 100%; max-width: 100%"
+            >
+              <iframe
+                style="height: 100%; width: 100%; border: 0"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=912+Jackson+Branch+Road,+Nashville,+Indiana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- about page -->
       <div class="about d-none w-100 pb-32px" id="aboutContent">
-        <h1>About Momma's Craft Cottage</h1>
-        <div class="about-description p-16px w-100 justify-content-between">
-          <p>
+        <h1 class="m-0 py-16px py-md-32px">About Momma's Craft Cottage</h1>
+        <div
+          class="about-description p-16px w-100 justify-content-center mx-auto border-radius-16px"
+        >
+          <p class="m-0 py-16px py-md-32px">
             Momma's Crafting Cottage mission is to provide a cozy, creative
             space where you and your friends can gather to craft and preserve
             memories which are timeless treasures of the heart. We aim to
@@ -187,7 +209,7 @@
             moments, creating lasting keepsakes that can be treasured for
             generations.
           </p>
-          <p>
+          <p class="m-0 py-16px py-md-32px">
             Momma's Craft Cottage is a family owned and operated business. We
             are located in the heart of Brown County, Indiana. Our retreat is
             inspired by our mothers and the love they displayed for their
@@ -195,7 +217,7 @@
             your friends. We hope you will join us for a retreat soon!
           </p>
           <img
-            class="host w-75"
+            class="host w-75 mx-auto py-16px py-md-32px border-radius-64px"
             src="./media/host-Image.JPEG"
             alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
           />
@@ -210,87 +232,92 @@
       <div class="gallery d-none w-100 pb-32px" id="galleryContent">
         <h2>Gallery</h2>
         <div
-          class="fit-picture d-flex flex-row justify-content-center flex-wrap"
+          class="fit-picture d-flex flex-row justify-content-center flex-wrap mx-auto"
         >
           <img
-            class="frontHouse w-45 h-auto p-16px"
+            class="frontHouse w-45 h-auto p-16px border-radius-64px"
             src="./media/cottageFrontSnow.jpg"
             alt="Front of House with snow"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/insideTableView.JPG"
             alt="inside view of table and kitchen area"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/cottageKitchen.JPG"
             alt="kitchen area at sink"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/bedroomTwoBunks.JPG"
             alt="bedroom with two bunkbeds"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/insideTableView.JPG"
             alt="dining table in kitchen"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/bedroomOne.JPG"
             alt="bdroom 1 with bed"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/familyMusicRoom.JPG"
             alt="bathroom shower area"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/coffeeStation.JPG"
             alt="coffee station self service"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/popcornMovie.JPG"
             alt="popcorn machine and movie area"
           />
           <img
-            class="w-45 h-auto p-16px"
+            class="w-45 h-auto p-16px border-radius-64px"
             src="./media/insideKitchenBarView.JPG"
             alt="inside kitchen bar area"
           />
         </div>
       </div>
       <!-- contact page -->
-      <div class="contact d-none w-100 pb-32px" id="contactContent">
-        <div class="contact-header p-16px w-100 justify-content-between">
-          <h2>Contact Us</h2>
+      <div class="contact d-none w-100 py-32px py-md-64px" id="contactContent">
+        <div
+          class="contact-header p-16px w-100 justify-content-between mx-auto border-radius-16px "
+        >
+          <h2 class="m-0 py-16px py-md-32px">Contact Us</h2>
           <div
             class="contact-pic w-100 d-flex flex-row justify-content-center align-items-center"
           ></div>
-          <h4>Momma's Craft Cottage</h4>
-          <div class="contact-info" list-style-type="none">
-            <p>912 Jackson Branch Road</p>
-            <p>Nashville, Indiana 47448</p>
-            <p><a href="tel:1+812-988-6185">1+812-988-6185</a></p>
-            <p>
+          <h2 class="m-0 py-16px py-md-32px">Momma's Craft Cottage</h4>
+          <div class="contact-info mx-auto border-radius-16px" list-style-type="none">
+            <p class="m-0 py-16px py-md-32px">912 Jackson Branch Road</p>
+            <p class="m-0 py-16px py-md-32px">Nashville, Indiana 47448</p>
+            <p class="m-0 py-16px py-md-32px">
+              <a href="tel:1+812-988-6185">1+812.988.6185</a>
+            </p>
+            <p class="m-0 py-16px py-md-32px">
               <a href="mailto:mommascraftcottage@gmail.com"
                 >mommascraftcottage@gmail.com</a
               >
             </p>
           </div>
-          <h2>Booking Inquiry</h2>
+          <h2 class="m-0 py-16px py-md-32px">Booking Inquiry</h2>
           <form
             id="Form"
             type="text"
             action="mailto:"
             method="POST"
             enctype="application/x-www-form-urlencoded"
+            class="mx-auto border-radius-16px"
           >
-            <p>
+            <p class="m-0 py-16px py-md-32px">
               <label for="firstName">First Name:</label>
               <input
                 id="firstName"
@@ -299,7 +326,7 @@
                 required
               />
             </p>
-            <p>
+            <p class="m-0 py-16px py-md-32px">
               <label for="lastName">Last Name:</label>
               <input
                 id="lastName"
@@ -309,7 +336,7 @@
               />
             </p>
 
-            <p>
+            <p class="m-0 py-16px py-md-32px">
               <label for="emailAddress">Email Address:</label>
               <input
                 id="emailAddress"
@@ -318,7 +345,7 @@
                 required
               />
             </p>
-            <p>
+            <p class="m-0 py-16px py-md-32px">
               <label for="phoneNumber">Phone Number:</label>
               <input
                 id="phoneNumber"
@@ -327,8 +354,8 @@
                 required
               />
             </p>
-            <p>
-              <label for="message">Message:</label>
+            <p class="m-0 py-16px py-md-32px">
+              <label for="message">Interested in the dates below:</label>
               <textarea
                 id="message"
                 type="text"
@@ -344,11 +371,12 @@
           </form>
           <!-- Embed Google Map feature -->
           <div
-            class="location-map d-flex flex-row justify-content-center"
+            class="location-map d-flex flex-row justify-content-center py-16px py-md-32px"
             id="map"
             style="display: flex"
           >
             <div
+            class="border-radius-16px"
               style="
                 text-decoration: none;
                 overflow: hidden;
