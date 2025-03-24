@@ -141,6 +141,7 @@ body {
 .pic-wrapper img {
   width: 100%;
   height: auto;
+  padding: 2rem;
   transition: transform 0.2s ease;
 }
 
@@ -157,14 +158,15 @@ figcaption {
 
 /* Headings*/
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: #2c3e50;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-family: 'comic sans ms', sans-serif;
+  text-align: center;padding: 0 1 rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Garamond', sans-serif;
 }
 h2 {
   font-size: 2rem;
+  padding: 0 1rem;
   color: #34495e;
   margin: 2rem 0 1rem;
   font-family: 'garamond', serif;
@@ -215,20 +217,64 @@ input:invalid:required {
 }
 
 .contact-header {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 1em;
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auton;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color:  white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-header h2 {
+  font-size: 1.8rem;
+  color:#2c3e50;
+  font-family: 'Garamond', serif;
+  margin-bottom: 1.5rem;
+}
+
+.contact-header h4 {
+  font-size: 1.4rem;
+  color:#34495e;
+  font-family: 'Georgia', serif;
+  margin: 1rem 0;
 }
 
 .contact-info {
-  font-size: 16px;
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background-color: #f7dfa1;
+  border-radius: 8px;
+  box-shadow: 0 2 px 4px rgba(0,0,0,0.1);
   text-align: center;
-  margin-bottom: 1em;
-  padding: 1em;
+  font-family: 'Georgia', serif;
+  
 }
 
+.contact-info a {
+  color:#4267B2;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+  color:#2c3e50;
+
+}
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background-color: #f7dfa1;
+  border-radius: 8px;
+  box-shadow: 0 2 px 4px rgba(0,0,0,0.1);
+  border: none;
+}
 .sr-only {
   visibility: hidden;
 }
@@ -272,32 +318,49 @@ input:invalid:required {
 .p-0 {
   padding: 0;
 }
-retreat-create {
-  margin: 0 auto;
-  width: 50%;
-  display: flex;
+.retreat-create {
+  width: 100%;
+  margin: 1rem auto;
+  diplay: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-size: 1.5em;
-  padding: 0 0.75em;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8 px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: auto;
+  font-size: 1.1rem;
 }
-
-/*how to make font look better,
-.about-Description {
-  margin: 40 auto;
-  width: 50%;
+.retreat-create p{
+  font-size: 1.1. rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  text-align: left;
+  margin-bottom: 1 rem;
+  background-color: white;
+  border-radius: 8 px;
+  box-shadow: 0 2 px 4px rgba(0,0,0,0.1);
+}
+/*how to make font look better,*/
+.about-description {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-size: 40px;
-  padding: 0 0.75em;
-}*/
-
-#menuButton {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: auto;
+  font-size: 1.1rem;
+}
+.about-description p {
+  line-height: 1.6;
+  color:#2c3e50;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-family: 'Georgia' serif;
+}
+ #menuButton {
   display: flex;
   cursor: pointer;
   padding-right: 40px;
@@ -310,6 +373,7 @@ retreat-create {
 .menu {
   display: none;
 }
+
 
 .menu.active {
   display: block;
@@ -334,5 +398,40 @@ retreat-create {
 
   .menu {
     display: none !important;
+  }
+  .retreat-create,
+  .retreat-to-create p,
+  .retreat-to-create dd {
+    width: 80%;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  .contact-header {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  .contact-indo {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 1024px){
+  .retreat-create,
+  .retreat-to-create p,
+  .retreat-to-create dd {
+    max-width: 800px;
+    width: 70%;
+    margin: 2rem auto;
+    font-size: 1.25rem;
+  }
+  .about-description{
+    max-width: 800px;
+    width: 70%;
+    margin: 2 rem auto;
+    font-size: 1.25rem;
+  }
+  .about-description p{
+    line-height: 1.8;
   }
 }
