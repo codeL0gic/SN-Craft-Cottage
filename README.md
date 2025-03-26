@@ -49,11 +49,7 @@ Code:YOU Feature Requirements
 ## Installation
 1. Clone the repository
   ```bash
-git clone https://github.com/codeL0gic/mommas-craft-cottage.git
+git clone https://github.com/codeL0gic/SN-Craft-Cottage.git
 ```
-2. Open indexhtml in your browser
-3. Add your API keys to the configuration:
-    -Scripture API BIBLE key
-     -Google Maps API key
-
-5. 
+2. Open index.html with your IDE using LiveServer and view in browser
+Or View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/ 
