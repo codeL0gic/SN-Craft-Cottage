@@ -1,6 +1,6 @@
-# Momma's Craft Cottage Retreat Websiye
+# Momma's Craft Cottage Retreat Website
 
-##Project Overview
+## Project Overview
 A responsive website for Momma's Craft Cottage, a craft retreat venue located in Brown County, Indiana.  This site features the inspiration behind the creation of this venue, location information, booking request capabilities, and inspirational Bible verses.
 
 ## Key Features
@@ -18,7 +18,7 @@ A responsive website for Momma's Craft Cottage, a craft retreat venue located in
 -Implements error handling for data persistence
 -Performs smooth form data recovery
 
-###Form Development
+### Form Development
 -Responsive booking inquiry form
 -Input validation for:
   -First & Last Name fields
@@ -35,14 +35,14 @@ A responsive website for Momma's Craft Cottage, a craft retreat venue located in
 -Success/error message handling
 -Auto-clearing form after submission
 
-#Technical Stack
+# Technical Stack
 -HTML5
 -CSS3
 -JavaScript (ES6+)
 -Scripture API BIBLE
 -Google Maps Embed API
 
-##Installation
+## Installation
 1. Clone the repository
   ```bash
 git clone https://github.com/yourusername/mommas-craft-cottage.git
