@@ -40,11 +40,11 @@ Code:YOU Feature Requirements
 -Auto-clearing form after submission
 
 # Technical Stack
--HTML5
--CSS3
--JavaScript (ES6+)
--Scripture API BIBLE
--Google Maps Embed API
+  -HTML5
+  -CSS3
+  -JavaScript (ES6+)
+  -Scripture API BIBLE
+  -Google Maps Embed API
 
 ## Installation
 1. Clone the repository
