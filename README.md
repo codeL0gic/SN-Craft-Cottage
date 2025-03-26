@@ -3,7 +3,11 @@
 ## Project Overview
 A responsive website for Momma's Craft Cottage, a craft retreat venue located in Brown County, Indiana.  This site features the inspiration behind the creation of this venue, location information, booking request capabilities, and inspirational Bible verses.
 
-## Key Features
+Code:YOU Feature Requirements
+
+
+
+
 
 ### Bible Verse API Integration
 -Implements the scripture API BIBLE for random verse generation
