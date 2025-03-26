@@ -203,7 +203,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Update content if elements exist
     if (verseContent && verseReference) {
       // Clean and set content
-      const cleanContent = verseData.data.content.replace(/<[^>]*>/g, "");
+      //first replaces to remove html tags
+      //then replaces to remove verse number from beginning of string
+      //then capitalizes the first letter from the beginning of the string using regex
+      const cleanContent = verseData.data.content
+        .replace(/<[^>]*>/g, "")
+        .replace(/^\d+\s*/, "")
+        .replace(/^[a-z]/, (match) => match.toUpperCase());
       verseContent.textContent = cleanContent;
       verseReference.textContent = verseData.data.reference;
     }
