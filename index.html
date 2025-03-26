@@ -17,10 +17,13 @@
     />
   </head>
   <!-- overall body -->
+
   <body class="bg-sunflower-yellow w-100 p-0">
     <div class="main-content d-flex flex-column w-100 min-height-100vh">
       <!-- overall navigation -->
-      <div class="nav d-flex flex-row justify-content-betweens bg-white p-16px max-height-150px">
+      <div
+        class="nav d-flex flex-row justify-content-betweens bg-white p-16px max-height-150px"
+      >
         <!-- logo image -->
 
         <img
@@ -114,54 +117,77 @@
       </div>
 
       <!-- home page -->
-      <div class="home w-100 pb-32px max-width 75" id="homeContent">
-        <h1 class="m-0 py-16px py-md-32px">Momma's Craft Cottage</h1>
-        <div class="pic-of-property">
-          <div class="pic-wrapper mx-auto">
-            <img
-              class="House w-100 h-auto border-radius-64px"
-              src="./media/cottageFrontCloseupSnow.jpg"
-              alt="Front of House"
-            />
-            <figcaption>Momma's Craft Cottage</figcaption>
+      <div class="home w-100 pb-32px px-xl-32px" id="homeContent">
+        <h1 class="m-0 py-16px py-md-32px py-xl-64px py-xl-64px">
+          Momma's Craft Cottage
+        </h1>
+        <div
+          class="d-flex flex-column flex-xl-row justify-content-center pb-16px pb-xl-32px"
+        >
+          <div class="pic-of-property max-w-xl-50">
+            <div class="pic-wrapper mx-auto">
+              <img
+                class="House w-100 h-auto border-radius-64px"
+                src="./media/cottageFrontCloseupSnow.jpg"
+                alt="Front of House"
+              />
+              <figcaption class="pb-xl-0">Momma's Craft Cottage</figcaption>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center max-w-xl-50"
+          >
+            <h2 class="m-0 py-16px py-md-32px pt-xl-0">
+              Retreat to Momma's Craft Cottage
+            </h2>
+            <div
+              class="retreat-create p-32px w-100 justify-content-between mx-auto border-radius-16px"
+            >
+              <p class="m-0 py-16px py-md-32px">
+                Retreat to Momma's Craft Cottage with 9 of your friends to be in
+                Scrapbook heaven. The cottage features a cozy 3 bedroom that
+                will sleep 9 and includes 2 baths, on a scenic country road in
+                legendary Brown County, IN. We offer private retreat rentals for
+                groups of 6-9 guest but may be able to acommodate groups as few
+                as 4 upon request. View Calendar and Make a Reservation!
+              </p>
+            </div>
           </div>
         </div>
-
-        <h2 class="m-0 py-16px py-md-32px">Retreat to Momma's Craft Cottage</h2>
-        <div
-          class="retreat-create p-32px w-100 justify-content-between mx-auto border-radius-16px"
-        >
-          <p class="m-0 py-16px py-md-32px">
-            Retreat to Momma's Craft Cottage with 9 of your friends to be in
-            Scrapbook heaven. The cottage features a cozy 3 bedroom that will
-            sleep 9 and includes 2 baths, on a scenic country road in legendary
-            Brown County, IN. We offer private retreat rentals for groups of 6-9
-            guest but may be able to acommodate groups as few as 4 upon request.
-            View Calendar and Make a Reservation!
-          </p>
-        </div>
-        <h2 class="m-0 py-16px py-md-32px">Retreat. Create.</h2>
-        <div
-          class="retreat-to-create d-flex flex-column p-16px justify-content-center align-items-center"
-        >
-          <p class="m-0 py-16px py-md-32px mx-auto">
-            Momma's Craft Cottage features:
-          </p>
-          <dl>
-            <dd class="mx-auto">1 spacious workroom on main level</dd>
-            <dd class="mx-auto">Easy access to unload supplies - no stairs</dd>
-            <dd class="mx-auto">6 individual tables with side tables</dd>
-            <dd class="mx-auto">
-              Great overhead lighting, 6 individual table lights, and lots of
-              natural lighting
-            </dd>
-            <dd class="mx-auto">
-              Individual power strips with USB and USB-C outlets
-            </dd>
-          </dl>
+        <div class="pb-16px pb-xl-32px">
+          <div
+            class="retreat-to-create d-flex flex-column p-16px justify-content-center align-items-center bg-white max-w-xl-fit-content mx-auto border-radius-16px"
+          >
+            <h2 class="m-0 py-16px py-md-32px">Retreat. Create.</h2>
+            <div
+              class="retreat-to-create d-flex flex-column p-16px justify-content-center align-items-center"
+            >
+              <p class="m-0 py-16px mx-auto">Momma's Craft Cottage features:</p>
+              <dl class="">
+                <dd class="mx-auto pb-16px pb-md-24px">
+                  1 spacious workroom on main level
+                </dd>
+                <dd class="mx-auto pb-16px pb-md-24px">
+                  Easy access to unload supplies - no stairs
+                </dd>
+                <dd class="mx-auto pb-16px pb-md-24px">
+                  6 individual tables with side tables
+                </dd>
+                <dd class="mx-auto pb-16px pb-md-24px">
+                  Great overhead lighting, 6 individual table lights
+                </dd>
+                <dd class="mx-auto pb-16px pb-md-24px">
+                  Beautiful natural lighting
+                </dd>
+                <dd class="mx-auto pb-16px pb-md-24px">
+                  Individual power strips with USB and USB-C outlets
+                </dd>
+              </dl>
+            </div>
+          </div>
         </div>
         <div id="versesContent" class="verse-container p-32px bg-white">
-          <div id="verse" class="verse-reference"></div>
+          <div id="verse" class="verse-reference pb-16px fw-bold"></div>
           <div id="verse-content" class="verse-text"></div>
         </div>
         <!-- Embed Google Map feature -->
@@ -171,7 +197,7 @@
           style="display: flex"
         >
           <div
-          class="border-radius-16px"
+            class="border-radius-16px"
             style="
               text-decoration: none;
               overflow: hidden;
@@ -196,7 +222,9 @@
 
       <!-- about page -->
       <div class="about d-none w-100 pb-32px" id="aboutContent">
-        <h1 class="m-0 py-16px py-md-32px">About Momma's Craft Cottage</h1>
+        <h1 class="m-0 py-16px py-md-32px py-xl-64px">
+          About Momma's Craft Cottage
+        </h1>
         <div
           class="about-description p-16px w-100 justify-content-center mx-auto border-radius-16px"
         >
@@ -216,11 +244,13 @@
             families. We are excited to share our love of crafting with you and
             your friends. We hope you will join us for a retreat soon!
           </p>
-          <img
-            class="host w-75 mx-auto py-16px py-md-32px border-radius-64px"
-            src="./media/host-Image.JPEG"
-            alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
-          />
+          <div class="mx-auto py-16px py-md-32px">
+            <img
+              class="host w-75 h-auto border-radius-64px"
+              src="./media/host-Image.JPEG"
+              alt="Picture of host with grandchildren and dog on their knee in a grassy yard"
+            />
+          </div>
         </div>
 
         <div class="about-host">
@@ -230,7 +260,7 @@
       </div>
       <!-- gallery page -->
       <div class="gallery d-none w-100 pb-32px" id="galleryContent">
-        <h2>Gallery</h2>
+        <h1 class="m-0 py-16px py-md-32px py-xl-64px">Gallery</h1>
         <div
           class="fit-picture d-flex flex-row justify-content-center flex-wrap mx-auto"
         >
@@ -289,20 +319,23 @@
       <!-- contact page -->
       <div class="contact d-none w-100 py-32px py-md-64px" id="contactContent">
         <div
-          class="contact-header p-16px w-100 justify-content-between mx-auto border-radius-16px "
+          class="contact-header p-16px w-100 justify-content-between mx-auto border-radius-16px"
         >
-          <h2 class="m-0 py-16px py-md-32px">Contact Us</h2>
+          <h1 class="m-0 pt-0">Contact Us</h1>
           <div
             class="contact-pic w-100 d-flex flex-row justify-content-center align-items-center"
           ></div>
-          <h2 class="m-0 py-16px py-md-32px">Momma's Craft Cottage</h4>
-          <div class="contact-info mx-auto border-radius-16px" list-style-type="none">
-            <p class="m-0 py-16px py-md-32px">912 Jackson Branch Road</p>
-            <p class="m-0 py-16px py-md-32px">Nashville, Indiana 47448</p>
-            <p class="m-0 py-16px py-md-32px">
+          <h2 class="m-0 pb-16px">Momma's Craft Cottage</h2>
+          <div
+            class="contact-info mx-auto border-radius-16px"
+            list-style-type="none"
+          >
+            <p class="m-0 pb-16px">912 Jackson Branch Road</p>
+            <p class="m-0 pb-16px">Nashville, Indiana 47448</p>
+            <p class="m-0 pb-16px">
               <a href="tel:1+812-988-6185">1+812.988.6185</a>
             </p>
-            <p class="m-0 py-16px py-md-32px">
+            <p class="m-0 pb-16px">
               <a href="mailto:mommascraftcottage@gmail.com"
                 >mommascraftcottage@gmail.com</a
               >
@@ -376,7 +409,7 @@
             style="display: flex"
           >
             <div
-            class="border-radius-16px"
+              class="border-radius-16px"
               style="
                 text-decoration: none;
                 overflow: hidden;

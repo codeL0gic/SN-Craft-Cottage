@@ -17,7 +17,7 @@ Code:YOU Feature Requirements
 -Custom Styling for verse display on the Home Page
 
 ### Local Storage Implementation
--Stores form data temporarily for the booking inquiries
+-Stores form data temporarily using Local Storage for the booking inquiries
 -Manages user input across sessions
 -Implements error handling for data persistence
 -Performs smooth form data recovery
@@ -31,6 +31,7 @@ Code:YOU Feature Requirements
   -Message Content to request booking dates
 -Custom Styling and mobile first design
 -Accessibility features included
+-Error handling message for incomplete input to fields
 
 ### Email Submission System
 -Direct email link generation
@@ -40,11 +41,11 @@ Code:YOU Feature Requirements
 -Auto-clearing form after submission
 
 ## Technical Stack
-  -HTML5
-  -CSS3
-  -JavaScript (ES6+)
-  -Scripture API BIBLE
-  -Google Maps Embed API
+  - HTML5
+  - CSS3
+  - JavaScript (ES6+)
+  - Scripture API BIBLE
+  - Google Maps Embed API
 
 ## Installation
 1. Clone the repository
