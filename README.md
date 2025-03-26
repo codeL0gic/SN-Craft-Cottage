@@ -1,7 +1,7 @@
 # Momma's Craft Cottage Retreat Website
 
 ## Project Overview
-A responsive website for Momma's Craft Cottage, a craft retreat venue located in Brown County, Indiana.  This site features the inspiration behind the creation of this venue, location information, booking request capabilities, and inspirational Bible verses.
+A responsive website for Momma's Craft Cottage, a craft retreat venue located in Brown County, Indiana.  This site features the story of the for this craft retreat venue, a gallery of pictures of retreat accommodations,  map & location information, form for booking request capabilities, and random inspirational Bible verses.
 
 Code:YOU Feature Requirements
 
@@ -39,7 +39,7 @@ Code:YOU Feature Requirements
 -Success/error message handling
 -Auto-clearing form after submission
 
-# Technical Stack
+## Technical Stack
   -HTML5
   -CSS3
   -JavaScript (ES6+)
@@ -52,4 +52,12 @@ Code:YOU Feature Requirements
 git clone https://github.com/codeL0gic/SN-Craft-Cottage.git
 ```
 2. Open index.html with your IDE using LiveServer and view in browser
-Or View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/ 
+Or View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/
+
+## Goals of this Project
+1. Demonstrate my understanding and knowledge application of building and responsive web design
+2. Demonstrate my knowledge of consume, create and implement Rest API's
+
+## Future Enhancements
+1. Implement the Weather API to show the current weather for the Retreat Location at the time it is accessed.
+2. Implement a function for the form data to be immediately sent to retreat email address. 
