@@ -55,8 +55,8 @@ git clone https://github.com/codeL0gic/SN-Craft-Cottage.git
 Or View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/
 
 ## Goals of this Project
-1. Demonstrate my understanding and knowledge application of building and responsive web design
-2. Demonstrate my knowledge of consume, create and implement Rest API's
+1. Demonstrate my understanding and knowledge of wire framing and implementing a responsive web design
+2. Demonstrate my knowledge of how to test, consume, create and implement Rest API's
 
 ## Future Enhancements
 1. Implement the Weather API to show the current weather for the Retreat Location at the time it is accessed.
