@@ -49,7 +49,7 @@ Code:YOU Feature Requirements
 ## Installation
 1. Clone the repository
   ```bash
-git clone https://github.com/yourusername/mommas-craft-cottage.git
+git clone https://github.com/codeL0gic/mommas-craft-cottage.git
 ```
 2. Open indexhtml in your browser
 3. Add your API keys to the configuration:
