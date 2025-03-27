@@ -3,9 +3,9 @@
 ## Project Overview
 A responsive website for Momma's Craft Cottage, a craft retreat venue located in Brown County, Indiana.  This site features the story of the for this craft retreat venue, a gallery of pictures of retreat accommodations,  map & location information, form for booking request capabilities, and random inspirational Bible verses.
 
-###Code:YOU Feature Requirements
+### Code:YOU Feature Requirements
 
-1. Persist data to an external API and make the stored data accessible in your app
+1. Persist data to an external API and make the stored data accessible in app
 2. Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
 3. Use a regular expression to validate user input and either prevent the invlaid input r inform te user about.
 4. Retrieve data from a third party API and use it to display something within your app
@@ -68,4 +68,4 @@ Or View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/
 
 Comments:
 I have used the following resources in my education, development and implementating all aspects of this website:
-MDN documentation, Google Developer Tools, StackOverflow, FontAwesome, BIBLE API, Youtube videos, Claude AI, GitHub documentation, Github CoPilot, ESLint, Chat GBT, npm docs, Express Documentation, freeCodeCamp, LUcid Charts, Postman, Javacript.info.com, LinkedInLearning.  I have also inspected numerous websites to understand how CSS and HTML function that helped me decide how to design Momma's Craft Cottage.  
+Pluralsight, MDN documentation, Google Developer Tools, StackOverflow, FontAwesome, BIBLE API, Youtube videos, Claude AI, GitHub documentation, Github CoPilot, ESLint, Chat GBT, npm docs, Express Documentation, freeCodeCamp, LUcid Charts, Postman, Javacript.info.com, LinkedInLearning.  I have also inspected numerous websites to understand how CSS and HTML function that helped me decide how to design Momma's Craft Cottage.  
