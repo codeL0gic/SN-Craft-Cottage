@@ -3,11 +3,11 @@
 ## Project Overview
 A responsive website for Momma's Craft Cottage, a craft retreat venue located in Brown County, Indiana.  This site features the story of the for this craft retreat venue, a gallery of pictures of retreat accommodations,  map & location information, form for booking request capabilities, and random inspirational Bible verses.
 
-### Code:YOU Feature Requirements
+###Code:YOU Feature Requirements
 
-1. Persist data to an external API and make the stored data accessible in app
+1. Persist data to an external API and make the stored data accessible in your app
 2. Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
-3. Use a regular expression to validate user input and either prevent the invlaid input r inform te user about.
+3. Use a regular expression to validate user input and either prevent the invlaid input to inform the user about.
 4. Retrieve data from a third party API and use it to display something within your app
 5. Create a form and store the submitted values in Local Storage
 
@@ -18,12 +18,35 @@ A responsive website for Momma's Craft Cottage, a craft retreat venue located in
   - Scripture API BIBLE
   - Google Maps Embed API
 ## Installation
+You can view the contents of the web app one of two ways, either cloning and building locally, or viewing using github pages.
+
+**TO CLONE AND VIEW LOCALLY:**
+
 1. Clone the repository
   ```bash
 git clone https://github.com/codeL0gic/SN-Craft-Cottage.git
 ```
-2. Open index.html with your IDE using LiveServer and view in browser
-Or View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/
+2. Set up Bible API Access
+   -Visit [API.Bible](https://scripture.api.bible/) and create a free account, select Get Started and complete personal profile
+   -Once logged in, go to Apps
+   -Click "Add Application", complete form  and select Create Application to generate a new API key
+   -Copy your API key
+   -In the project, rename `config_example.js` to `config.js` and add your API key to `config.js`
+
+   `config.js` contents:
+   ```Javascript
+     export const API_KEY = "INSERT_API_KEY_HERE";
+   ```
+   -Update the `.gitignore` file to include:
+   ```
+   config.js
+   ```
+
+3. Open index.html with your IDE using LiveServer and view in browser
+
+**TO VIEW USING GITHUB PAGES:**
+
+View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/
 
 ### Bible Verse API Integration
 -Implements the scripture API BIBLE for random verse generation
@@ -56,7 +79,6 @@ Or View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/
 -Success/error message handling
 -Auto-clearing form after submission
 
-
 ## Goals of this Project
 1. Demonstrate my understanding and knowledge of wire framing and implementing a responsive web design
 2. Demonstrate my knowledge of how to test, consume, create and implement Rest API's
@@ -68,4 +90,4 @@ Or View using Github pages: https://codel0gic.github.io/SN-Craft-Cottage/
 
 Comments:
 I have used the following resources in my education, development and implementating all aspects of this website:
-Pluralsight, MDN documentation, Google Developer Tools, StackOverflow, FontAwesome, BIBLE API, Youtube videos, Claude AI, GitHub documentation, Github CoPilot, ESLint, Chat GBT, npm docs, Express Documentation, freeCodeCamp, LUcid Charts, Postman, Javacript.info.com, LinkedInLearning.  I have also inspected numerous websites to understand how CSS and HTML function that helped me decide how to design Momma's Craft Cottage.  
+MDN documentation, Google Developer Tools, StackOverflow, FontAwesome, BIBLE API, Youtube videos, Claude AI, GitHub documentation, Github CoPilot, ESLint, Chat GBT, npm docs, Express Documentation, freeCodeCamp, LUcid Charts, Postman, Javacript.info.com, LinkedInLearning.  I have also inspected numerous websites to understand how CSS and HTML function that helped me decide how to design Momma's Craft Cottage.  

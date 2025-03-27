@@ -1,4 +1,5 @@
 "use strict";
+import { API_KEY } from "./config.js";
 
 const homeLink = document.getElementById("homeLink");
 const aboutLink = document.getElementById("aboutLink");
@@ -132,7 +133,7 @@ const verse = document.querySelector(`#verse-content`);
 const verseRef = document.querySelector(`#verse`);
 
 async function getRandomVerse() {
-  const API_KEY = `abd336c8cee9fdfde6291c5ce6689f17`;
+  const API_KEY_COPY = API_KEY;
   const BIBLE_ID = "06125adad2d5898a-01";
   const Verses = [
     `JER.29.11`,
@@ -174,7 +175,7 @@ async function getRandomVerse() {
       {
         method: "GET",
         headers: {
-          "api-key": API_KEY,
+          "api-key": API_KEY_COPY,
           Accept: "application/json",
           "Content-Type": "application/json",
         },
